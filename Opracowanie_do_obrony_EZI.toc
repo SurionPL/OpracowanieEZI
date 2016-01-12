@@ -1,0 +1,203 @@
+\select@language {polish}
+\select@language {polish}
+\contentsline {section}{\numberline {1}Sterowniki mikroprocesorowe i ich zastosowania}{2}{section.0.1}
+\contentsline {subsection}{\numberline {1.1}Sterownik PLC}{2}{subsection.0.1.1}
+\contentsline {paragraph}{Programowalny sterownik logiczny PLC}{2}{section*.2}
+\contentsline {paragraph}{Historia\\}{3}{section*.3}
+\contentsline {paragraph}{Za\IeC {\l }o\IeC {\.z}enia sterownika}{3}{section*.4}
+\contentsline {paragraph}{Budowa}{3}{section*.5}
+\contentsline {paragraph}{J\IeC {\k e}zyki programowania}{3}{section*.6}
+\contentsline {paragraph}{Poziomy sygna\IeC {\l }\IeC {\'o}w cyfrowych}{4}{section*.7}
+\contentsline {paragraph}{Poziomy sygna\IeC {\l }\IeC {\'o}w analogowych}{4}{section*.8}
+\contentsline {paragraph}{Zadania PLC}{4}{section*.9}
+\contentsline {subsection}{\numberline {1.2}Regulator PID}{4}{subsection.0.1.2}
+\contentsline {paragraph}{Regulator PID}{4}{section*.10}
+\contentsline {paragraph}{Zakres proporcjonalno\IeC {\'s}ci}{5}{section*.11}
+\contentsline {paragraph}{Czas zdwojenia (ca\IeC {\l }kowania)}{5}{section*.12}
+\contentsline {paragraph}{Czas wyprzedzenia (r\IeC {\'o}\IeC {\.z}niczkowania)}{6}{section*.13}
+\contentsline {subsection}{\numberline {1.3}Sterownik CNC}{6}{subsection.0.1.3}
+\contentsline {paragraph}{Sterownik CNC}{6}{section*.14}
+\contentsline {subsection}{\numberline {1.4}Kontroler PAC}{7}{subsection.0.1.4}
+\contentsline {paragraph}{Sterowniki PAC}{7}{section*.15}
+\contentsline {section}{\numberline {2}Lokalne sieci komputerowe}{8}{section.0.2}
+\contentsline {paragraph}{Sieci lokalne LAN}{8}{section*.16}
+\contentsline {section}{\numberline {3}Bazy danych i ich zastosowania}{8}{section.0.3}
+\contentsline {paragraph}{Baza danych}{8}{section*.17}
+\contentsline {paragraph}{Kryteria klasyfikacji baz danych}{9}{section*.18}
+\contentsline {paragraph}{Bazy relacyjne}{9}{section*.19}
+\contentsline {paragraph}{Zastosowania}{10}{section*.20}
+\contentsline {subsection}{\numberline {3.1}Architektura Oracle}{10}{subsection.0.3.1}
+\contentsline {paragraph}{Rodzaje plik\IeC {\'o}w}{10}{section*.21}
+\contentsline {paragraph}{Procesy t\IeC {\l }a}{12}{section*.22}
+\contentsline {paragraph}{Stany bazy danych}{12}{section*.23}
+\contentsline {section}{\numberline {4}Przetwarzanie obraz\IeC {\'o}w, metody i zastosowania}{12}{section.0.4}
+\contentsline {subparagraph}{Reprezentacja obrazu}{12}{section*.24}
+\contentsline {subsection}{\numberline {4.1}Algorytmy przetwarzania obraz\IeC {\'o}w}{13}{subsection.0.4.1}
+\contentsline {paragraph}{Og\IeC {\'o}lnie\\\\}{13}{section*.25}
+\contentsline {paragraph}{Operacje punktowe\\\\}{14}{section*.26}
+\contentsline {paragraph}{Histogramy\\\\}{14}{section*.27}
+\contentsline {paragraph}{Operacje algebraiczne\\\\}{14}{section*.28}
+\contentsline {subparagraph}{Binaryzacja}{14}{section*.29}
+\contentsline {paragraph}{Filtracje\\\\}{15}{section*.30}
+\contentsline {paragraph}{Decymacja i interpolacja\\\\}{15}{section*.31}
+\contentsline {paragraph}{Wykrywanie kraw\IeC {\k e}dzi\\\\}{15}{section*.32}
+\contentsline {subsection}{\numberline {4.2}Inne zastosowania}{15}{subsection.0.4.2}
+\contentsline {section}{\numberline {5}Miary i oceny dok\IeC {\l }adno\IeC {\'s}ci algorytm\IeC {\'o}w przybli\IeC {\.z}onych}{15}{section.0.5}
+\contentsline {paragraph}{Algorytmy aproksymacyjne}{15}{section*.33}
+\contentsline {paragraph}{Oszacowania jako\IeC {\'s}ci algorytm\IeC {\'o}w aproksymacyjnych\\\\}{16}{section*.34}
+\contentsline {paragraph}{Schemat aproksymacyjny}{17}{section*.35}
+\contentsline {section}{\numberline {6}Systemy operacyjne komputer\IeC {\'o}w}{18}{section.0.6}
+\contentsline {paragraph}{System operacyjny}{18}{section*.36}
+\contentsline {paragraph}{Budowa i zadania poszczeg\IeC {\'o}lnych warstw OS\\\\}{18}{section*.37}
+\contentsline {paragraph}{G\IeC {\l }\IeC {\'o}wne zadania stawiane przed systemami operacyjnymi to:}{18}{section*.38}
+\contentsline {paragraph}{Najwa\IeC {\.z}niejszymi cechami, kt\IeC {\'o}re decyduj\IeC {\k a} o u\IeC {\.z}yteczno\IeC {\'s}ci danego systemu operacyjnego s\IeC {\k a}:}{19}{section*.39}
+\contentsline {paragraph}{Systemy operacyjne podzieli\IeC {\'c} mo\IeC {\.z}na ze wzgl\IeC {\k e}du na:}{20}{section*.40}
+\contentsline {subparagraph}{Spos\IeC {\'o}b komunikacji systemu z u\IeC {\.z}ytkownikiem:}{20}{section*.41}
+\contentsline {subparagraph}{Architektur\IeC {\k e} systemu:}{20}{section*.42}
+\contentsline {paragraph}{Przyk\IeC {\l }ady system\IeC {\'o}w:}{21}{section*.43}
+\contentsline {section}{\numberline {7}Zadania optymalizacji i techniki ich rozwi\IeC {\k a}zywania}{22}{section.0.7}
+\contentsline {subsection}{\numberline {7.1}Sformu\IeC {\l }owanie zadania optymalizacji}{22}{subsection.0.7.1}
+\contentsline {subsection}{\numberline {7.2}Rodzaje zada\IeC {\'n}}{22}{subsection.0.7.2}
+\contentsline {paragraph}{Zadanie programowania liniowego PL}{22}{section*.44}
+\contentsline {subparagraph}{Metody rozwi\IeC {\k a}zywania:}{23}{section*.45}
+\contentsline {paragraph}{Zadanie liniowego programowania ca\IeC {\l }kowitoliczbowego PCL\\\\}{23}{section*.46}
+\contentsline {subparagraph}{Metody uproszczone:}{23}{section*.47}
+\contentsline {subparagraph}{Metody z\IeC {\l }o\IeC {\.z}one:}{23}{section*.48}
+\contentsline {paragraph}{Zadanie programowania nieliniowego PN}{24}{section*.49}
+\contentsline {paragraph}{Nieliniowe zadanie optymalizacji statycznej bez ogranicze\IeC {\'n}}{24}{section*.50}
+\contentsline {subparagraph}{Iteracyjne algorytmy optymalizacji:}{24}{section*.51}
+\contentsline {subparagraph}{Algorytmy bezgradientowe:}{25}{section*.52}
+\contentsline {subparagraph}{Algorytmy gradientowe:}{25}{section*.53}
+\contentsline {paragraph}{Nieliniowe zadanie optymalizacji statycznej z ograniczeniami\\\\}{25}{section*.54}
+\contentsline {subparagraph}{Ograniczenie aktywne\\\\}{25}{section*.55}
+\contentsline {subparagraph}{Przypadki:}{26}{section*.56}
+\contentsline {section}{\numberline {8}Systemy dynamiczne, opisy w\IeC {\l }asno\IeC {\'s}ci}{26}{section.0.8}
+\contentsline {section}{\numberline {9}Programowanie w systemie operacyjnym Unix}{26}{section.0.9}
+\contentsline {subsection}{\numberline {9.1}Programowanie w j\IeC {\k e}zyku pow\IeC {\l }oki}{26}{subsection.0.9.1}
+\contentsline {paragraph}{Pow\IeC {\l }oka}{26}{section*.57}
+\contentsline {paragraph}{Pow\IeC {\l }oki UNIX}{26}{section*.58}
+\contentsline {subparagraph}{Bourne shell (sh)}{26}{section*.59}
+\contentsline {subparagraph}{Bash\\\\}{27}{section*.60}
+\contentsline {subparagraph}{Korn shell (ksh)}{27}{section*.61}
+\contentsline {subparagraph}{C shell (csh)}{27}{section*.62}
+\contentsline {paragraph}{Polecenia pow\IeC {\l }oki\\}{27}{section*.63}
+\contentsline {subsection}{\numberline {9.2}Programowanie w C}{27}{subsection.0.9.2}
+\contentsline {section}{\numberline {10}Komputer, architektura i oprogramowanie}{27}{section.0.10}
+\contentsline {paragraph}{Komputer}{27}{section*.64}
+\contentsline {subsection}{\numberline {10.1}Architektury}{28}{subsection.0.10.1}
+\contentsline {paragraph}{Model von Neumanna a model wsp\IeC {\'o}\IeC {\l }czesnego komputera\\\\}{28}{section*.65}
+\contentsline {paragraph}{Architektury typu Princeton i Harward \\\\}{28}{section*.66}
+\contentsline {paragraph}{Pami\IeC {\k e}\IeC {\'c} operacyjna}{29}{section*.67}
+\contentsline {paragraph}{Urz\IeC {\k a}dzenia wej\IeC {\'s}cia-wyj\IeC {\'s}cia}{29}{section*.68}
+\contentsline {paragraph}{DMA - Direct Memory Access}{29}{section*.69}
+\contentsline {paragraph}{System przerwa\IeC {\'n}}{29}{section*.70}
+\contentsline {subparagraph}{Przerwanie}{29}{section*.71}
+\contentsline {subsection}{\numberline {10.2}Oprogramowanie}{29}{subsection.0.10.2}
+\contentsline {paragraph}{Oprogramowanie}{29}{section*.72}
+\contentsline {paragraph}{Rodzaje oprogramowania \vspace \medskipamount }{30}{section*.73}
+\contentsline {section}{\numberline {11}Programowanie strukturalne i obiektowe}{30}{section.0.11}
+\contentsline {paragraph}{Programowanie strukturalne}{30}{section*.74}
+\contentsline {paragraph}{Programowanie obiektowe}{30}{section*.75}
+\contentsline {section}{\numberline {12}Fala elektromagnetyczna: typy, parametry, w\IeC {\l }a\IeC {\'s}ciwo\IeC {\'s}ci}{31}{section.0.12}
+\contentsline {paragraph}{Pole elektryczne}{31}{section*.76}
+\contentsline {paragraph}{Pole magnetyczne}{31}{section*.77}
+\contentsline {paragraph}{Fala elektromagnetyczna}{31}{section*.78}
+\contentsline {subparagraph}{Cechy}{32}{section*.79}
+\contentsline {paragraph}{Energia fali elektromagnetycznej}{33}{section*.80}
+\contentsline {paragraph}{Wektor Poyntinga}{33}{section*.81}
+\contentsline {paragraph}{P\IeC {\k e}d i ci\IeC {\'s}nienie fali elektromagnetycznej}{33}{section*.82}
+\contentsline {section}{\numberline {13}Tranzystory bipolarne i unipolarne: budowa, w\IeC {\l }a\IeC {\'s}ciwo\IeC {\'s}ci i zastosowania}{33}{section.0.13}
+\contentsline {subsection}{\numberline {13.1}Tranzystory bipolarne}{33}{subsection.0.13.1}
+\contentsline {paragraph}{Tranzystor bipolarny}{33}{section*.83}
+\contentsline {subsubsection}{Budowa}{34}{section*.84}
+\contentsline {subsubsection}{Zastosowania:}{37}{section*.85}
+\contentsline {subparagraph}{Wzmacniacz}{37}{section*.86}
+\contentsline {subparagraph}{Prze\IeC {\l }\IeC {\k a}cznik}{37}{section*.87}
+\contentsline {subsection}{\numberline {13.2}Tranzystory unipolarne (polowe)}{37}{subsection.0.13.2}
+\contentsline {paragraph}{Tranzystory unipolarne (polowe)}{37}{section*.88}
+\contentsline {paragraph}{Budowa JFET (tranzystora polowego z\IeC {\l }\IeC {\k a}czowego)\\\\}{37}{section*.89}
+\contentsline {paragraph}{Budowa MOSFET (tranzystora polowego z izolowan\IeC {\k a} bramk\IeC {\k a})\\\\}{37}{section*.90}
+\contentsline {paragraph}{Rodzaje tranzystor\IeC {\'o}w polowych\\\\}{42}{section*.91}
+\contentsline {paragraph}{W\IeC {\l }a\IeC {\'s}ciwo\IeC {\'s}ci tranzystor\IeC {\'o}w polowych\\\\}{42}{section*.92}
+\contentsline {paragraph}{Podstawowe charakterystyki:}{42}{section*.93}
+\contentsline {subparagraph}{Przej\IeC {\'s}ciowa}{42}{section*.94}
+\contentsline {subparagraph}{Wyj\IeC {\'s}ciowa}{42}{section*.95}
+\contentsline {section}{\numberline {14}Systemy ci\IeC {\k a}g\IeC {\l }e i dyskretne: klasyfikacja, opis}{44}{section.0.14}
+\contentsline {section}{\numberline {15}Zmienna losowa: w\IeC {\l }a\IeC {\'s}ciwo\IeC {\'s}ci, opis}{44}{section.0.15}
+\contentsline {subsection}{\numberline {15.1}Zmienne losowe}{44}{subsection.0.15.1}
+\contentsline {paragraph}{Zmienna losowa}{44}{section*.96}
+\contentsline {subsection}{\numberline {15.2}Dystrybuanta i jej w\IeC {\l }asno\IeC {\'s}ci}{45}{subsection.0.15.2}
+\contentsline {paragraph}{Dystrybuanta}{45}{section*.97}
+\contentsline {subsection}{\numberline {15.3}Funkcja g\IeC {\k e}sto\IeC {\'s}ci}{45}{subsection.0.15.3}
+\contentsline {paragraph}{Funkcja g\IeC {\k e}sto\IeC {\'s}ci zmiennej losowej ci\IeC {\k a}g\IeC {\l }ej}{45}{section*.98}
+\contentsline {paragraph}{Mediana}{45}{section*.99}
+\contentsline {subsection}{\numberline {15.4}Podstawowe parametry rozk\IeC {\l }adu zmiennej losowej}{46}{subsection.0.15.4}
+\contentsline {paragraph}{Warto\IeC {\'s}\IeC {\'c} oczekiwana}{46}{section*.100}
+\contentsline {paragraph}{Wariancja}{46}{section*.101}
+\contentsline {paragraph}{Odchylenie standardowe}{46}{section*.102}
+\contentsline {section}{\numberline {16}Ci\IeC {\k a}g\IeC {\l }a, dyskretna i szybka transformata Fouriera, widmo sygna\IeC {\l }u}{46}{section.0.16}
+\contentsline {subsection}{\numberline {16.1}Ci\IeC {\k a}g\IeC {\l }a transformata Fouriera}{46}{subsection.0.16.1}
+\contentsline {subsection}{\numberline {16.2}Dyskretna transformata Fouriera}{47}{subsection.0.16.2}
+\contentsline {subsection}{\numberline {16.3}Szybka transformata Fouriera}{47}{subsection.0.16.3}
+\contentsline {subsection}{\numberline {16.4}Widomo sygna\IeC {\l }u}{47}{subsection.0.16.4}
+\contentsline {section}{\numberline {17}Modulacje analogowe i cyfrowe}{47}{section.0.17}
+\contentsline {subparagraph}{Modulacja}{47}{section*.103}
+\contentsline {subsection}{\numberline {17.1}Modulacje analogowe}{48}{subsection.0.17.1}
+\contentsline {paragraph}{Modulacja amplitudy AM}{48}{section*.104}
+\contentsline {paragraph}{Modulacja cz\IeC {\k e}stotliwo\IeC {\'s}ci FM}{48}{section*.105}
+\contentsline {paragraph}{Modulacja fazy PM}{49}{section*.106}
+\contentsline {subsection}{\numberline {17.2}Modulacje cyfrowe}{51}{subsection.0.17.2}
+\contentsline {paragraph}{Modulacja cyfrowa}{51}{section*.107}
+\contentsline {paragraph}{Modulacja ASK}{51}{section*.108}
+\contentsline {paragraph}{Modulacja FSK}{51}{section*.109}
+\contentsline {paragraph}{Modulacja PSK}{51}{section*.110}
+\contentsline {paragraph}{Modulacja QPSK}{52}{section*.111}
+\contentsline {paragraph}{Modulacja MSK}{52}{section*.112}
+\contentsline {paragraph}{Zastosowania:}{52}{section*.113}
+\contentsline {section}{\numberline {18}Wzmacniacze operacyjne: w\IeC {\l }a\IeC {\'s}ciwo\IeC {\'s}ci i zastosowania}{52}{section.0.18}
+\contentsline {section}{\numberline {19}Mikroprocesory: budowa, zastosowania}{53}{section.0.19}
+\contentsline {subsection}{\numberline {19.1}Architektury}{53}{subsection.0.19.1}
+\contentsline {subparagraph}{Architektura harwardzka}{53}{section*.114}
+\contentsline {subparagraph}{Architektura von Neumanna}{53}{section*.115}
+\contentsline {subparagraph}{Architektura super-harwardzka}{53}{section*.116}
+\contentsline {subparagraph}{CISC}{53}{section*.117}
+\contentsline {subparagraph}{RISC}{53}{section*.118}
+\contentsline {subsection}{\numberline {19.2}Budowa}{53}{subsection.0.19.2}
+\contentsline {paragraph}{ALU}{54}{section*.119}
+\contentsline {paragraph}{CU}{54}{section*.120}
+\contentsline {paragraph}{Rejestry}{54}{section*.121}
+\contentsline {paragraph}{Magistrale}{54}{section*.122}
+\contentsline {subsection}{\numberline {19.3}Mikroprocesor a mikrokontroler}{55}{subsection.0.19.3}
+\contentsline {subsection}{\numberline {19.4}Zastosowania}{55}{subsection.0.19.4}
+\contentsline {section}{\numberline {20}Sieci komputerowe: budowa, protoko\IeC {\l }y, zastosowanie}{55}{section.0.20}
+\contentsline {subsection}{\numberline {20.1}Budowa}{55}{subsection.0.20.1}
+\contentsline {paragraph}{Sk\IeC {\l }adniki sieci komputerowych}{55}{section*.123}
+\contentsline {paragraph}{Model odniesienia OSI}{56}{section*.124}
+\contentsline {paragraph}{Budowa (topologia)}{56}{section*.125}
+\contentsline {paragraph}{Topologia magistrali (szyny, linii)}{56}{section*.126}
+\contentsline {subparagraph}{Zalety:}{56}{section*.127}
+\contentsline {subparagraph}{Wady:}{56}{section*.128}
+\contentsline {paragraph}{Topologia gwiazdy}{56}{section*.129}
+\contentsline {subparagraph}{Zalety:}{57}{section*.130}
+\contentsline {subparagraph}{Wady:}{57}{section*.131}
+\contentsline {paragraph}{Topologia pier\IeC {\'s}cienia}{57}{section*.132}
+\contentsline {subparagraph}{Zalety:}{57}{section*.133}
+\contentsline {subparagraph}{Wady:}{58}{section*.134}
+\contentsline {paragraph}{Rozszerzone topologie}{58}{section*.135}
+\contentsline {paragraph}{Podstawowe urz\IeC {\k a}dzenia kieruj\IeC {\k a}ce ruchem w sieci}{58}{section*.136}
+\contentsline {subsection}{\numberline {20.2}Protoko\IeC {\l }y}{58}{subsection.0.20.2}
+\contentsline {subsubsection}{Protoko\IeC {\l }y warstwy aplikacji}{58}{section*.137}
+\contentsline {subparagraph}{FTP}{58}{section*.138}
+\contentsline {subparagraph}{HTTP}{59}{section*.139}
+\contentsline {subparagraph}{HTTPS}{59}{section*.140}
+\contentsline {subparagraph}{DNS}{59}{section*.141}
+\contentsline {subparagraph}{SMTP}{59}{section*.142}
+\contentsline {subparagraph}{POP3}{59}{section*.143}
+\contentsline {subparagraph}{TELNET}{59}{section*.144}
+\contentsline {subsubsection}{Protoko\IeC {\l }y warstwy transportowej}{59}{section*.145}
+\contentsline {subparagraph}{TCP}{59}{section*.146}
+\contentsline {subparagraph}{UDP}{60}{section*.147}
+\contentsline {subsubsection}{Protoko\IeC {\l }y warstwy sieci}{60}{section*.148}
+\contentsline {subparagraph}{IP}{60}{section*.149}
+\contentsline {subparagraph}{ARP}{60}{section*.150}
+\contentsline {subsection}{\numberline {20.3}Zastosowania}{60}{subsection.0.20.3}
