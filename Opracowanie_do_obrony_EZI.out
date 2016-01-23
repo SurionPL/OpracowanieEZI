@@ -1,72 +1,66 @@
 \BOOKMARK [1][-]{section.0.1}{Sterowniki mikroprocesorowe i ich zastosowania}{}% 1
 \BOOKMARK [2][-]{subsection.0.1.1}{Sterownik PLC}{section.0.1}% 2
-\BOOKMARK [2][-]{subsection.0.1.2}{Poziomy sygna\233\363w}{section.0.1}% 3
-\BOOKMARK [2][-]{subsection.0.1.3}{Zadania PLC}{section.0.1}% 4
-\BOOKMARK [2][-]{subsection.0.1.4}{Regulator PID}{section.0.1}% 5
-\BOOKMARK [2][-]{subsection.0.1.5}{Sterownik CNC}{section.0.1}% 6
-\BOOKMARK [2][-]{subsection.0.1.6}{Kontroler PAC}{section.0.1}% 7
-\BOOKMARK [1][-]{section.0.2}{Lokalne sieci komputerowe}{}% 8
-\BOOKMARK [1][-]{section.0.3}{Bazy danych i ich zastosowania}{}% 9
-\BOOKMARK [2][-]{subsection.0.3.1}{Bazy relacyjne}{section.0.3}% 10
-\BOOKMARK [2][-]{subsection.0.3.2}{Z Wikipedii \(takie powt\363rzenie\)}{section.0.3}% 11
-\BOOKMARK [2][-]{subsection.0.3.3}{Architektura Oracle}{section.0.3}% 12
-\BOOKMARK [2][-]{subsection.0.3.4}{Zastosowania}{section.0.3}% 13
-\BOOKMARK [1][-]{section.0.4}{Przetwarzanie obraz\363w, metody i zastosowania}{}% 14
-\BOOKMARK [2][-]{subsection.0.4.1}{Algorytmy przetwarzania obraz\363w}{section.0.4}% 15
-\BOOKMARK [2][-]{subsection.0.4.2}{Inne zastosowania}{section.0.4}% 16
-\BOOKMARK [1][-]{section.0.5}{Miary i oceny dok\233adnosci algorytm\363w przyblizonych}{}% 17
-\BOOKMARK [1][-]{section.0.6}{Systemy operacyjne komputer\363w}{}% 18
-\BOOKMARK [1][-]{section.0.7}{Zadania optymalizacji i techniki ich rozwiazywania}{}% 19
-\BOOKMARK [2][-]{subsection.0.7.1}{Sformu\233owanie zadania optymalizacji}{section.0.7}% 20
-\BOOKMARK [2][-]{subsection.0.7.2}{Rodzaje zadan}{section.0.7}% 21
-\BOOKMARK [1][-]{section.0.8}{Systemy dynamiczne, opisy w\233asnosci}{}% 22
-\BOOKMARK [2][-]{subsection.0.8.1}{Podzia\233 uk\233ad\363w}{section.0.8}% 23
-\BOOKMARK [2][-]{subsection.0.8.2}{Transmitancja operatorowa uk\233adu}{section.0.8}% 24
-\BOOKMARK [2][-]{subsection.0.8.3}{Charakterystyki}{section.0.8}% 25
-\BOOKMARK [2][-]{subsection.0.8.4}{Cz\233ony dynamiczne}{section.0.8}% 26
-\BOOKMARK [2][-]{subsection.0.8.5}{Stabilnosc}{section.0.8}% 27
-\BOOKMARK [1][-]{section.0.9}{Programowanie w systemie operacyjnym Unix}{}% 28
-\BOOKMARK [2][-]{subsection.0.9.1}{Programowanie w jezyku pow\233oki}{section.0.9}% 29
-\BOOKMARK [2][-]{subsection.0.9.2}{Podstawowe mechanizmy}{section.0.9}% 30
-\BOOKMARK [2][-]{subsection.0.9.3}{Wyrazenia regularne: sed, awk, grep}{section.0.9}% 31
-\BOOKMARK [2][-]{subsection.0.9.4}{Funkcje I/O niskiego poziomu, deskryptory, przeglad bibliotek systemu UNIX}{section.0.9}% 32
-\BOOKMARK [2][-]{subsection.0.9.5}{Programowanie proces\363w: tworzenie, atrybuty, dziedziczenie atrybut\363w, wsp\363\233dzielenie zasob\363w. Sygna\233y, obs\233uga sygna\233\363w. Komunikacja przez potoki}{section.0.9}% 33
-\BOOKMARK [2][-]{subsection.0.9.6}{Komunikacja miedzyprocesowa}{section.0.9}% 34
-\BOOKMARK [1][-]{section.0.10}{Komputer, architektura i oprogramowanie}{}% 35
-\BOOKMARK [2][-]{subsection.0.10.1}{Architektury}{section.0.10}% 36
-\BOOKMARK [2][-]{subsection.0.10.2}{Opis sk\233adowych komputera}{section.0.10}% 37
-\BOOKMARK [2][-]{subsection.0.10.3}{Oprogramowanie}{section.0.10}% 38
-\BOOKMARK [1][-]{section.0.11}{Programowanie strukturalne i obiektowe}{}% 39
-\BOOKMARK [1][-]{section.0.12}{Fala elektromagnetyczna: typy, parametry, w\233asciwosci}{}% 40
-\BOOKMARK [2][-]{subsection.0.12.1}{Pojecia}{section.0.12}% 41
-\BOOKMARK [2][-]{subsection.0.12.2}{Parametry i w\233asciwosci}{section.0.12}% 42
-\BOOKMARK [1][-]{section.0.13}{Tranzystory bipolarne i unipolarne: budowa, w\233asciwosci i zastosowania}{}% 43
-\BOOKMARK [2][-]{subsection.0.13.1}{Tranzystory bipolarne}{section.0.13}% 44
-\BOOKMARK [2][-]{subsection.0.13.2}{Tranzystory unipolarne \(polowe\)}{section.0.13}% 45
-\BOOKMARK [1][-]{section.0.14}{Systemy ciag\233e i dyskretne: klasyfikacja, opis}{}% 46
-\BOOKMARK [2][-]{subsection.0.14.1}{Sygna\233y}{section.0.14}% 47
-\BOOKMARK [2][-]{subsection.0.14.2}{Dodatek}{section.0.14}% 48
-\BOOKMARK [1][-]{section.0.15}{Zmienna losowa: w\233asciwosci, opis}{}% 49
-\BOOKMARK [2][-]{subsection.0.15.1}{Zmienne losowe}{section.0.15}% 50
-\BOOKMARK [2][-]{subsection.0.15.2}{Dystrybuanta i jej w\233asnosci}{section.0.15}% 51
-\BOOKMARK [2][-]{subsection.0.15.3}{Funkcja gestosci}{section.0.15}% 52
-\BOOKMARK [2][-]{subsection.0.15.4}{Podstawowe parametry rozk\233adu zmiennej losowej}{section.0.15}% 53
-\BOOKMARK [1][-]{section.0.16}{Ciag\233a, dyskretna i szybka transformata Fouriera, widmo sygna\233u}{}% 54
-\BOOKMARK [2][-]{subsection.0.16.1}{Ciag\233a transformata Fouriera}{section.0.16}% 55
-\BOOKMARK [2][-]{subsection.0.16.2}{Dyskretna transformata Fouriera \(DFT\)}{section.0.16}% 56
-\BOOKMARK [2][-]{subsection.0.16.3}{Przeciek DFT}{section.0.16}% 57
-\BOOKMARK [2][-]{subsection.0.16.4}{Szybka transformata Fouriera \(FFT\)}{section.0.16}% 58
-\BOOKMARK [2][-]{subsection.0.16.5}{Widmo sygna\233u}{section.0.16}% 59
-\BOOKMARK [1][-]{section.0.17}{Modulacje analogowe i cyfrowe}{}% 60
-\BOOKMARK [2][-]{subsection.0.17.1}{Modulacje analogowe}{section.0.17}% 61
-\BOOKMARK [2][-]{subsection.0.17.2}{Modulacje cyfrowe}{section.0.17}% 62
-\BOOKMARK [1][-]{section.0.18}{Wzmacniacze operacyjne: w\233asciwosci i zastosowania}{}% 63
-\BOOKMARK [1][-]{section.0.19}{Mikroprocesory: budowa, zastosowania}{}% 64
-\BOOKMARK [2][-]{subsection.0.19.1}{Architektury}{section.0.19}% 65
-\BOOKMARK [2][-]{subsection.0.19.2}{Budowa}{section.0.19}% 66
-\BOOKMARK [2][-]{subsection.0.19.3}{Mikroprocesor a mikrokontroler}{section.0.19}% 67
-\BOOKMARK [2][-]{subsection.0.19.4}{Zastosowania}{section.0.19}% 68
-\BOOKMARK [1][-]{section.0.20}{Sieci komputerowe: budowa, protoko\233y, zastosowanie}{}% 69
-\BOOKMARK [2][-]{subsection.0.20.1}{Budowa}{section.0.20}% 70
-\BOOKMARK [2][-]{subsection.0.20.2}{Protoko\233y}{section.0.20}% 71
-\BOOKMARK [2][-]{subsection.0.20.3}{Zastosowania}{section.0.20}% 72
+\BOOKMARK [2][-]{subsection.0.1.2}{Regulator PID}{section.0.1}% 3
+\BOOKMARK [2][-]{subsection.0.1.3}{Sterownik CNC}{section.0.1}% 4
+\BOOKMARK [2][-]{subsection.0.1.4}{Kontroler PAC}{section.0.1}% 5
+\BOOKMARK [1][-]{section.0.2}{Lokalne sieci komputerowe}{}% 6
+\BOOKMARK [1][-]{section.0.3}{Bazy danych i ich zastosowania}{}% 7
+\BOOKMARK [2][-]{subsection.0.3.1}{Bazy relacyjne}{section.0.3}% 8
+\BOOKMARK [2][-]{subsection.0.3.2}{Z Wikipedii \(takie powt\363rzenie\)}{section.0.3}% 9
+\BOOKMARK [2][-]{subsection.0.3.3}{Architektura Oracle}{section.0.3}% 10
+\BOOKMARK [2][-]{subsection.0.3.4}{Zastosowania}{section.0.3}% 11
+\BOOKMARK [1][-]{section.0.4}{Przetwarzanie obraz\363w, metody i zastosowania}{}% 12
+\BOOKMARK [2][-]{subsection.0.4.1}{Algorytmy przetwarzania obraz\363w}{section.0.4}% 13
+\BOOKMARK [2][-]{subsection.0.4.2}{Inne zastosowania}{section.0.4}% 14
+\BOOKMARK [1][-]{section.0.5}{Miary i oceny dok\233adnosci algorytm\363w przyblizonych}{}% 15
+\BOOKMARK [1][-]{section.0.6}{Systemy operacyjne komputer\363w}{}% 16
+\BOOKMARK [1][-]{section.0.7}{Zadania optymalizacji i techniki ich rozwiazywania}{}% 17
+\BOOKMARK [2][-]{subsection.0.7.1}{Sformu\233owanie zadania optymalizacji}{section.0.7}% 18
+\BOOKMARK [2][-]{subsection.0.7.2}{Rodzaje zadan}{section.0.7}% 19
+\BOOKMARK [1][-]{section.0.8}{Systemy dynamiczne, opisy w\233asnosci}{}% 20
+\BOOKMARK [2][-]{subsection.0.8.1}{Podzia\233 uk\233ad\363w}{section.0.8}% 21
+\BOOKMARK [2][-]{subsection.0.8.2}{Transmitancja operatorowa uk\233adu}{section.0.8}% 22
+\BOOKMARK [2][-]{subsection.0.8.3}{Charakterystyki}{section.0.8}% 23
+\BOOKMARK [2][-]{subsection.0.8.4}{Cz\233ony dynamiczne}{section.0.8}% 24
+\BOOKMARK [2][-]{subsection.0.8.5}{Stabilnosc}{section.0.8}% 25
+\BOOKMARK [1][-]{section.0.9}{Programowanie w systemie operacyjnym Unix}{}% 26
+\BOOKMARK [1][-]{section.0.10}{Komputer, architektura i oprogramowanie}{}% 27
+\BOOKMARK [2][-]{subsection.0.10.1}{Architektury}{section.0.10}% 28
+\BOOKMARK [2][-]{subsection.0.10.2}{Opis sk\233adowych komputera}{section.0.10}% 29
+\BOOKMARK [2][-]{subsection.0.10.3}{Oprogramowanie}{section.0.10}% 30
+\BOOKMARK [1][-]{section.0.11}{Programowanie strukturalne i obiektowe}{}% 31
+\BOOKMARK [1][-]{section.0.12}{Fala elektromagnetyczna: typy, parametry, w\233asciwosci}{}% 32
+\BOOKMARK [2][-]{subsection.0.12.1}{Pojecia}{section.0.12}% 33
+\BOOKMARK [2][-]{subsection.0.12.2}{Parametry i w\233asciwosci}{section.0.12}% 34
+\BOOKMARK [1][-]{section.0.13}{Tranzystory bipolarne i unipolarne: budowa, w\233asciwosci i zastosowania}{}% 35
+\BOOKMARK [2][-]{subsection.0.13.1}{Tranzystory bipolarne}{section.0.13}% 36
+\BOOKMARK [2][-]{subsection.0.13.2}{Tranzystory unipolarne \(polowe\)}{section.0.13}% 37
+\BOOKMARK [1][-]{section.0.14}{Systemy ciag\233e i dyskretne: klasyfikacja, opis}{}% 38
+\BOOKMARK [2][-]{subsection.0.14.1}{Sygna\233y}{section.0.14}% 39
+\BOOKMARK [2][-]{subsection.0.14.2}{Dodatek}{section.0.14}% 40
+\BOOKMARK [1][-]{section.0.15}{Zmienna losowa: w\233asciwosci, opis}{}% 41
+\BOOKMARK [2][-]{subsection.0.15.1}{Zmienne losowe}{section.0.15}% 42
+\BOOKMARK [2][-]{subsection.0.15.2}{Rozk\233ady zmiennej losowej}{section.0.15}% 43
+\BOOKMARK [2][-]{subsection.0.15.3}{Dystrybuanta i jej w\233asnosci}{section.0.15}% 44
+\BOOKMARK [2][-]{subsection.0.15.4}{Funkcja gestosci}{section.0.15}% 45
+\BOOKMARK [2][-]{subsection.0.15.5}{Podstawowe parametry rozk\233adu zmiennej losowej}{section.0.15}% 46
+\BOOKMARK [1][-]{section.0.16}{Ciag\233a, dyskretna i szybka transformata Fouriera, widmo sygna\233u}{}% 47
+\BOOKMARK [2][-]{subsection.0.16.1}{Ciag\233a transformata Fouriera}{section.0.16}% 48
+\BOOKMARK [2][-]{subsection.0.16.2}{FT w dziedzinie czasu}{section.0.16}% 49
+\BOOKMARK [2][-]{subsection.0.16.3}{Dyskretna transformata Fouriera \(DFT\)}{section.0.16}% 50
+\BOOKMARK [2][-]{subsection.0.16.4}{Przeciek DFT}{section.0.16}% 51
+\BOOKMARK [2][-]{subsection.0.16.5}{Szybka transformata Fouriera \(FFT\)}{section.0.16}% 52
+\BOOKMARK [2][-]{subsection.0.16.6}{Widmo sygna\233u}{section.0.16}% 53
+\BOOKMARK [1][-]{section.0.17}{Modulacje analogowe i cyfrowe}{}% 54
+\BOOKMARK [2][-]{subsection.0.17.1}{Modulacje analogowe}{section.0.17}% 55
+\BOOKMARK [2][-]{subsection.0.17.2}{Modulacje cyfrowe}{section.0.17}% 56
+\BOOKMARK [1][-]{section.0.18}{Wzmacniacze operacyjne: w\233asciwosci i zastosowania}{}% 57
+\BOOKMARK [1][-]{section.0.19}{Mikroprocesory: budowa, zastosowania}{}% 58
+\BOOKMARK [2][-]{subsection.0.19.1}{Architektury}{section.0.19}% 59
+\BOOKMARK [2][-]{subsection.0.19.2}{Budowa}{section.0.19}% 60
+\BOOKMARK [2][-]{subsection.0.19.3}{Mikroprocesor a mikrokontroler}{section.0.19}% 61
+\BOOKMARK [2][-]{subsection.0.19.4}{Zastosowania}{section.0.19}% 62
+\BOOKMARK [1][-]{section.0.20}{Sieci komputerowe: budowa, protoko\233y, zastosowanie}{}% 63
+\BOOKMARK [2][-]{subsection.0.20.1}{Budowa}{section.0.20}% 64
+\BOOKMARK [2][-]{subsection.0.20.2}{Protoko\233y}{section.0.20}% 65
+\BOOKMARK [2][-]{subsection.0.20.3}{Zastosowania}{section.0.20}% 66

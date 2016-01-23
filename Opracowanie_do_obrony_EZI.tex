@@ -76,11 +76,11 @@ Inżynierowie z Hydramatic Division firmy GM w roku 1968 sformułowali założen
 \item \textbf{drabinkowy LD} (ang. Ladder Diagram) - logika drabinkowa, a schemat podobny do klasycznego rysunku technicznego elektrycznego,
 \item \textbf{blokowy FBD} (ang. Function Block Diagram) - diagram bloków funkcyjnych, sekwencji linni zawierająca te bloki,
 \item \textbf{strukturalny ST} (ang. Structured Text) - tekst strukturalny - język zbliżony do Pascala;
-\item \textbf{lista instrukcji IL} (ang. Instruction List) lista instrukcji - rodzaj asemblera,
-\item \textbf{sekwencyjny SFC} (ang. Sequential Function Chart) sekwencyjny ciąg bloków - sekwencja bloków programowych z warunkami przejścia.
+\item \textbf{lista instrukcji IL} (ang. Instruction List) - rodzaj asemblera,
+\item \textbf{sekwencyjny SFC} (ang. Sequential Function Chart) - sekwencja bloków programowych z warunkami przejścia.
 \end{itemize}
 
-\subsection{Poziomy sygnałów}
+\subsubsection{Poziomy sygnałów}
 \begin{itemize}
 \item analogowe
 	\begin{itemize}
@@ -99,7 +99,7 @@ Inżynierowie z Hydramatic Division firmy GM w roku 1968 sformułowali założen
 
 Analogowe sygnały wejściowe sterują: zaworami analogowymi, szybkością obrotów silników, rejestratorami.
 
-\subsection{Zadania PLC}
+\subsubsection{Zadania PLC}
 \begin{itemize}
 \item skanowanie wejść,
 \item wykonywanie instrukcji,
@@ -163,9 +163,9 @@ Wielkości $k_p$ (w starszych typach regulatorów X), $T_i$ i $T_d$ noszą nazw�
 \item uzyskać najlepszą jakość regulacji.
 \end{itemize}
 
-Transmitancja określona wzorem \eqref{wzor:PID_idealny} dotyczy regulatora idealnego, którego w praktyce nie daje  się  zrealizować.  W  warunkach  rzeczywistych  w  członie  różniczkującym  występuje inercja, określona stałą czasową T. Stała ta nie jest nastawialna. Zatem zamiast członu~$T_d \cdot s$ w transmitancji  występuje  człon~$T_ds/Ts+1$. Transmitancja  operatorowa  rzeczywistego  regulatora PID ma wówczas postać:
+Transmitancja określona wzorem \eqref{wzor:PID_idealny} dotyczy regulatora idealnego, którego w praktyce nie daje  się  zrealizować.  W  warunkach  rzeczywistych  w  członie  różniczkującym  występuje inercja, określona stałą czasową T. Stała ta nie jest nastawialna. Zatem zamiast członu\linebreak $T_d \cdot s$ w transmitancji  występuje  człon~$T_ds/Ts+1$. Transmitancja  operatorowa  rzeczywistego  regulatora PID ma wówczas postać:
 \begin{equation}
-G_r(s)=\dfrac{U'(s)}{E(s)} = k_p(1+\dfrac{1}{T_i \cdot s}+ \dfrac{T_d \cdot s}{T s + 1}),
+G_r(s)=\dfrac{U'(s)}{E(s)} = k_p(1+\dfrac{1}{T_i \cdot s}+ \dfrac{T_d \cdot s}{T s + 1}).
 \end{equation}
 
 \subsection{Sterownik CNC}
@@ -176,7 +176,7 @@ W nowoczesnych maszynach CNC stosuje się sterowniki pracujące na bazie kompute
 \subsection{Kontroler PAC}
 \paragraph{Sterowniki PAC} (ang.Programmable Automation Controller) zwane sterownikami automatyki są dużymi systemami sterownikowymi przeznaczonymi do obsługi złożonych procesów technologicznych. Wiele dotychczasowych sterowników PLC o największej wydajności zostało nazwanych przez producentów sterownikami PAC. Granica pomiędzy dużymi i wydajnymi sterownikami PLC a sterownikami PAC jest obecnie słabo widoczna.
 Współczesne procesy sterowania wykorzystują ogromne ilości sygnałów i danych, począwszy od analogowych i cyfrowych urządzeń wejścia/wyjścia, poprzez szybkie kamery wysokiej rozdzielczości, a kończąc na wieloosiowych
-sterownikach ruchu. Takie zastosowania, jak: szybka produkcja, monitoring pracy maszyn w czasie rzeczywistym, sterowanie precyzyjne czy sterowanie złożonym procesem, wymagają deterministycznych systemów akwizycji, zaawansowanej analizy i algorytmów przetwarzania danych.Wyższej klasy sterowniki PLC w pewnym stopniu spełniają te wymagania. Jednakże do wydajnego przetwarzania tych danych trzeba zastosować odpowiednie środki informatyczne, m.in. procesory zmiennoprzecinkowe i duże zasoby pamięci. Sterowniki PAC integrują tego rodzaju gotowe składniki sprzętowe w ramach systemu czasu rzeczywistego, oferując w ten sposób wydajną platformę dla inżynierów automatyki.
+sterownikach ruchu. Takie zastosowania, jak: szybka produkcja, monitoring pracy maszyn w czasie rzeczywistym, sterowanie precyzyjne czy sterowanie złożonym procesem, wymagają deterministycznych systemów akwizycji, zaawansowanej analizy i algorytmów przetwarzania danych. Wyższej klasy sterowniki PLC w pewnym stopniu spełniają te wymagania. Jednakże do wydajnego przetwarzania tych danych trzeba zastosować odpowiednie środki informatyczne, m.in. procesory zmiennoprzecinkowe i duże zasoby pamięci. Sterowniki PAC integrują tego rodzaju gotowe składniki sprzętowe w ramach systemu czasu rzeczywistego, oferując w ten sposób wydajną platformę dla inżynierów automatyki.
 
 \section{Lokalne sieci komputerowe}
 \paragraph{Sieci lokalne LAN} (ang. Local Area Network), są sieciami prywatnymi obejmującymi pojedynczy budynek lub grupę budynków w obszarze o średnicy do kilku kilometrów. Sieci te są powszechnie używane do łączenia komputerów osobistych i stacji roboczych w biurach firmy i fabrykach w celu udostępnienia zasobów (np. drukarek) i wymiany informacji. 
@@ -278,43 +278,40 @@ Relacyjne bazy danych (jak również przeznaczony dla nich standard SQL) oparte 
 \paragraph{Rodzaje plików}
 
 \begin{itemize}
-\item pliki konfiguracyjne (init files) — najważniejszy z nich to plik parametrów (tzw. parameter file, w skrócie pfile) o nazwie init<SID>.ora, gdzie <SID> to unikalny (najczęściej 4-literowy) identyfikator instancji na danej maszynie, plik jest tekstowy i zawiera informacje o ustawieniach przy starcie bazy, a także o nazwie i położeniu plików kontrolnych
-\item pliki kontrolne (control files) — binarne, bardzo ważne, zawierają informacje o położeniu WSZYSTKICH plików bazy danych wraz z datą i godziną ich zamknięcia
-\item pliki danych (data files) — przechowują dane w postaci binarnej, z danych w nich zawartych korzysta się za pośrednictwem procesów serwera (tła)
-\item  pliki dziennika powtórzeń (redo-log files) - rejestrują wszystkie operacje wykonane na bazie (na wypadek awarii), mogą być aktywne lub zarchiwizowane 
-\item pliki śladu (trace files) — zawierają informacje o uszkodzeniach i o błędach procesów tła oraz procesów użytkowników
-\item pliki kodu (code files) — wszelkie kody źródłowe, skrypty SQL itp 
+\item \textbf{pliki konfiguracyjne (init files)} — najważniejszy z nich to plik parametrów (tzw. parameter file, w skrócie pfile) o nazwie init<SID>.ora, gdzie <SID> to unikalny (najczęściej 4-literowy) identyfikator instancji na danej maszynie, plik jest tekstowy i zawiera informacje o ustawieniach przy starcie bazy, a także o nazwie i położeniu plików kontrolnych
+\item \textbf{pliki kontrolne (control files)} — binarne, bardzo ważne, zawierają informacje o położeniu WSZYSTKICH plików bazy danych wraz z datą i godziną ich zamknięcia
+\item \textbf{pliki danych (data files)} — przechowują dane w postaci binarnej, z danych w nich zawartych korzysta się za pośrednictwem procesów serwera (tła)
+\item \textbf{ pliki dziennika powtórzeń (redo-log files)} - rejestrują wszystkie operacje wykonane na bazie (na wypadek awarii), mogą być aktywne lub zarchiwizowane 
+\item \textbf{pliki śladu (trace files)} — zawierają informacje o uszkodzeniach i o błędach procesów tła oraz procesów użytkowników
+\item\textbf{ pliki kodu (code files)} — wszelkie kody źródłowe, skrypty SQL itp 
 \end{itemize}
 
 
 \textbf{SGA} (ang. System Global Area). 
 Składa się z:
 \begin{itemize}
-\item bufora danych, który:
-Zawiera dane załadowane z dysku, okresowo zapisane (Dirty blocks), przechowuje informacje o zmianach, ma strukturę cykliczną.
-\item bufora dziennika powtórzeń, który przechowuje informację o zmianach, ma strukturę cykliczną.
+\item bufora danych, który zawiera dane załadowane z dysku, okresowo zapisane (Dirty blocks), przechowuje informacje o zmianach, ma strukturę cykliczną.
+\item bufora dziennika powtórzeń, który przechowuje informację o zmianach, ma strukturę cykliczną
 \item obszaru współdzielonego
 \end{itemize}
 
 \paragraph{Procesy tła}
 \begin{itemize}
-\item DBWR — database writer — zapisuje DIRTY BLOCKS na dysk 
-\item LGWR — log writer — zapisuje zmiany do loga
-\item CKPT — checkpoint — sygnalizuje tzw. punkt kontrolny + aktualizuje nagłówki plików kontrolnych
-\item SMON — system monitor — odtwarza instancję, scala wolne obszary na dysku
-\item PMON — process monitor — zwalnia zasoby procesu użytkownika, który się ,,zawiesił''
-\item ARCH — archiwizator — opcjonalny, spowalnia pracę, umożliwia skonfigurowanie serwera lustrzanego
+\item \textbf{DBWR} — database writer — zapisuje DIRTY BLOCKS na dysk 
+\item \textbf{LGWR} — log writer — zapisuje zmiany do loga
+\item \textbf{CKPT} — checkpoint — sygnalizuje tzw. punkt kontrolny + aktualizuje nagłówki plików kontrolnych
+\item \textbf{SMON} — system monitor — odtwarza instancję, scala wolne obszary na dysku
+\item \textbf{PMON} — process monitor — zwalnia zasoby procesu użytkownika, który się ,,zawiesił''
+\item \textbf{ARCH} — archiwizator — opcjonalny, spowalnia pracę, umożliwia skonfigurowanie serwera lustrzanego
 \end{itemize}
 
 \paragraph{Stany bazy danych}
 
 \begin{itemize}
-\item IDLE - nieczynna, pliki zamknięte, procesy tła nie działają 
-\item NOMOUNT - stan po odczytaniu pfile-a, zainicjowaniu SGA i uruchomieniu procesów tła, stan służący do tworzenia nowej bazy danych
-
-\item MOUNT - stan po odczytaniu plików kontrolnych i otwarciu połączenia z plikami danych i log-ami
-
-\item OPEN - stan otwarcia bazy, dane są dostępne dla użytkowników (w wyjątkowych sytuacjach stan można uruchomić w tzw. trybie RESTRICTED, wtedy dostęp do bazy mają tylko administratorzy)
+\item \textbf{IDLE} - nieczynna, pliki zamknięte, procesy tła nie działają 
+\item \textbf{NOMOUNT} - stan po odczytaniu pfile-a, zainicjowaniu SGA i uruchomieniu procesów tła, stan służący do tworzenia nowej bazy danych
+\item \textbf{MOUNT} - stan po odczytaniu plików kontrolnych i otwarciu połączenia z plikami danych i log-ami
+\item \textbf{OPEN} - stan otwarcia bazy, dane są dostępne dla użytkowników (w wyjątkowych sytuacjach stan można uruchomić w tzw. trybie RESTRICTED, wtedy dostęp do bazy mają tylko administratorzy)
 
 \end{itemize}
 
@@ -351,13 +348,13 @@ Czwartym kanałem często używanym np. w formacie png może być kanał A (\tex
 \subsection{Algorytmy przetwarzania obrazów}
 Pojęcie \textbf{przetwarzania obrazów} można rozumieć rozmaicie. W wąskim sensie oznacza operacje, które przetwarzają jedne obrazy w inne - zarówno dane wejściowe jak i wyjściowe mają formę obrazu. W tym sensie zawierają się:
 \begin{itemize}
-	\item akwizycja obrazów - wprowadzenie obrazów, zwłaszcza cyfrowych do systemów technicznych (sorki, brzydka definicja),
-	\item reprezentacja obrazu i modelowanie - dobór reprezentacji obrazu w systemie tech., by odpowiadała ona charakterowi obrazu i przeznaczeniu reprezentacji, również modele matematyczne obrazów. Głębia, przestrzeń barw
-	\item polepszanie obrazów - wytwarzanie obrazów subiektywnie ocenianych przez człowieka jako lepsze,
-	\item odzyskiwanie, restauracja obrazów - usuwanie zniekształceń (geometrycznych), zakłóceń (szumy, rozmycia),
-	\item kompresja obrazów - oczywiste
-	\item znakowanie wodne - umieszczanie i odczytywanie dodatkowych, często niewidocznych informacji,
-	\item prezentacja - wyświetlanie obrazów,
+	\item \textbf{akwizycja obrazów} - wprowadzenie obrazów, zwłaszcza cyfrowych do systemów technicznych (sorki, brzydka definicja),
+	\item \textbf{reprezentacja obrazu i modelowanie} - dobór reprezentacji obrazu w systemie tech., by odpowiadała ona charakterowi obrazu i przeznaczeniu reprezentacji, również modele matematyczne obrazów; Głębia, przestrzeń barw,
+	\item \textbf{polepszanie obrazów} - wytwarzanie obrazów subiektywnie ocenianych przez człowieka jako lepsze,
+	\item \textbf{odzyskiwanie, restauracja obrazów} - usuwanie zniekształceń (geometrycznych), zakłóceń (szumy, rozmycia),
+	\item \textbf{kompresja obrazów} - oczywiste,
+	\item \textbf{znakowanie wodne} - umieszczanie i odczytywanie dodatkowych, często niewidocznych informacji,
+	\item \textbf{prezentacja} - wyświetlanie obrazów.
 \end{itemize}
 Z tego punktu widzenia grafika komputerowa, animacje komputerowe stanowią oddzielną grupę metod.
 	
@@ -463,7 +460,7 @@ Mówimy, że schemat aproksymacji jest w pełni wielomianowym schematem aproksym
 \section{Systemy operacyjne komputerów}
 
 \paragraph{System operacyjny}
-(ang. Operating System) jest środowiskiem programów tworzących główną platformę programową umożliwiającą działanie zainstalowanego w systemie oprogramowania. OS nadzoruje pracę wszystkich uruchomionych procesów oraz urządzeń komputera. Pomimo iż swą pracę wykonuje przeważnie w tle i sam w sobie nie tworzy z komputera w pełni funkcjonalnego narzędzia jednak bez niego komputer jest kompletnie bezużyteczny. System operacyjny zainstalowany na dysku twardym komputera decyduje jakie oprogramowanie może zostać uruchomione pod jego kontrolą, wpływa na bezpieczeństwo danych, realizuje połączenia do sieci nadzorując podrzędne systemy pracujące na innych komputerach, określa kompatybilność wobec innych systemów, decydując o funkcjonalności stabilności pracy. Niestety nie istnieje system idealny, każdy ma swoje zalety i wady.
+(ang. Operating System) jest środowiskiem programów tworzących główną platformę programową umożliwiającą działanie zainstalowanego w systemie oprogramowania. OS nadzoruje pracę wszystkich uruchomionych procesów oraz urządzeń komputera. Pomimo iż swą pracę wykonuje przeważnie w tle i sam w sobie nie tworzy z komputera w pełni funkcjonalnego narzędzia jednak bez niego komputer jest kompletnie bezużyteczny. System operacyjny zainstalowany na dysku twardym komputera decyduje jakie oprogramowanie może zostać uruchomione pod jego kontrolą, wpływa na bezpieczeństwo danych, realizuje połączenia do sieci nadzorując podrzędne systemy pracujące na innych komputerach, określa kompatybilność wobec innych systemów, decydując o funkcjonalności stabilności pracy.
 
 \subsubsection{Warstwy OS - budowa i zadania}
 Podczas pracy OS komunikuje się zazwyczaj z elektroniką komputera poprzez BIOS i sterowniki choć jest możliwa również jego bezpośrednia komunikacja ze sprzętem co zostało pokazane na rysunku \ref{rys:warstwowy_model_OS}. System operacyjny można przedstawić w postaci modelu warstwowego.
@@ -697,8 +694,10 @@ oraz $$g_i:X = R^n \longrightarrow R^1~dla~każdego~i=1,...,m$$
 Dla $\hat{x}$ ograniczenie przyjmuje postać:
 \[  g_i(\hat{x})=0 \]
 
+\begin{center}
+$ g_i(\hat{x}+\tau d) \le 0,$ dla każdego $i \in A(\hat{x})$
+\end{center}
 
-$$ g_i(\hat{x}+\tau d) \le 0, dla każdego i \in A(\hat{x})$$
 
 przy czym $\tau \in [0,\sigma]$
 
@@ -719,7 +718,7 @@ ograniczenia problemu.
 
 \section{Systemy dynamiczne, opisy własności}
 
-\paragraph{Układ dynamiczny} - model matematyczny rzeczywistego zjawiska przyrody, którego przyszłe zachowanie(stan,ewolucja) jest wyznaczone jednoznacznie przez stan początkowy i sygnał sterujący. Najczęściej jest opisany pewnym wektorowym równaniem różniczkowym -zwanym równaniem stanu układu. 
+\paragraph{Układ dynamiczny} - model matematyczny rzeczywistego zjawiska przyrody, którego przyszłe zachowanie(stan,ewolucja) jest wyznaczone jednoznacznie przez stan początkowy i sygnał sterujący. Najczęściej jest opisany pewnym wektorowym równaniem różniczkowym - zwanym równaniem stanu układu. 
 \subsection{Podział układów}
 \paragraph{Ze względu na charakter sygnałów}
 \begin{itemize}
@@ -796,7 +795,7 @@ Układ o parametrach rozłożonych – jeśli $n \to \infty $ (czyli jego przest
 \subsection{Transmitancja operatorowa układu}
 \textbf{Transmitancja operatorowa} (funkcja przejścia, $G(s)$) - stosunek transformaty Laplace`a sygnału wyjściowego do transformaty Laplace`a sygnału wejściowego układu przy zerowych warunkach początkowych.
 \begin{equation}
-G(s)=\dfrac{Y(s)}{U(s)}
+K(s)=\dfrac{Y(s)}{U(s)}
 \end{equation}
 
 Transmitancja określa ogólne własności stacjonarnego układu liniowego o jednym wejściu i jednym wyjściu, niezależne od rodzaju wymuszenia. Dla układu wielowymiarowego o $r$ wejściach o $m$ wyjściach można określić $m \times n$ transmitancji wiążących każde wyjście z każdym wejściem.
@@ -863,11 +862,12 @@ przy czym bieguny transmitancji, dla których zachodzą równości są co najwy�
 
 \subsubsection{Kryteria stabilności}
 Aby stwierdzić czy system o transmitancji:
-$$K(s)=\frac{L(s)}{M(s)} $$
+\begin{equation}
+K(s)=\dfrac{L(s)}{M(s)}=\dfrac{b_{l}s^{l}+b_{l-1}s^{l-1}+...+b_{1}s+b_{0}}{a_{m}s^{m}+a_{m-1}s^{m-1}+...+a_{1}s+a_{0}}
+\end{equation}
 jest stabilny, wystarczy rozwiązać jego równanie charakterystyczne $M(s)=0$, a następnie sprawdzić, czy wyznaczone w ten sposób pierwiastki mają ujemne części rzeczywiste 
 
 Rozwiązanie równania jest możliwe tylko dla $m \le 4 $ tzn. tylko wtedy można znaleźć jego pierwiastki przy użyciu takich działań jak dodawanie, odejmowanie, mnożenie i dzielenie oraz pierwiastkowanie. Równań wyższych stopni, poza szczególymi przypadkami, rozwiązać nie można.
-$$M(s)=a_{m}s^{m}+a_{m-1}s^{m-1}+...+a_{1}s+a_{0} $$
 
 
 \paragraph{Twierdzenie o znaku współczynników\\}
@@ -926,9 +926,7 @@ Gdyby ktoś potrzebował większego przypomnienia z kryteriów:
 
 \section{Programowanie w systemie operacyjnym Unix}
 
-%\subsection{Interpreter komend Bourne shell, podstawowe mechanizmy, pisanie skryptów, rozszerzenia POSIX }
-
-\subsection{Programowanie w języku powłoki}
+%\subsection{Programowanie w języku powłoki}
 
 \paragraph{Powłoka} (ang. shell) jest programem umożliwiającym pracę z systemem   UNIX. Jej nazwa wywodzi się z graficznej prezentacji systemu, w której jądro i procesy obsługi wejścia i wyjścia są otoczone właśnie przez powłokę. Jej funkcją jest odseparowanie użytkownika od bezpośredniego dostępu do jądra systemu i umożliwienie   łatwej i wszechstronnej pracy. Podstawowym zadaniem powłoki jest przyjmowanie     poleceń użytkownika i uruchamianie stosownych programów. Do dalszych funkcji powłoki należy konstruowanie parametrów dla poleceń oraz zarządzanie sposobem wykonywania programów procesów. Następnym, bardziej skomplikowanym krokiem jest tworzenie   funkcji i procedur powłoki(skryptów) pozwalających   na łączenie wielu   poleceń  w   jedno,umożliwiając pisanie całych programów dla powłoki.
 \subsubsection{Powłoki UNIX}
@@ -957,23 +955,22 @@ Gdyby ktoś potrzebował większego przypomnienia z kryteriów:
 	\item rzadko wykorzystywana
 	\end{itemize}
 \end{itemize}
-
+Pisząc skrypt, aby zadbać o kompatybilność i przenośność na wiele systemów uniksowych, należy brać pod uwagę tylko i wyłącznie Bourne shell. Warto także wziąć pod uwagę standard POSIX.
 
 \subsubsection{Polecenia powłoki}
 Wydanie polecenia w powłoce wiąże się z podaniem ciągu znaków. Składa się z następujących elementów:
 \begin{center}\textbf{<nazwa polecenia> -<opcje> <parametry>}\end{center}
 Nazwą polecenia jest nazwa jakiegokolwiek programu, funkcji powłoki lub funkcji   wewnętrznej powłoki. Opcje to najczęściej zestaw pojedynczych liter określających     sposób wykonania programu. Parametry to informacje czego dotyczy wykonanie.
 
-\subsection{Podstawowe mechanizmy}
 \subsubsection{Globbing}
 Mechanizm polegający na dopasowywaniu.
-$*$ $?$ $[a-z A-Z_]$ do nazw plików.
+$*$ $?$ $[a-z A-Z_{}]$ do nazw plików, np. \emph{wc *.c} lub \emph{ls -l program?.[abc]}.
 
-\subsubsection{Procesy i podprocesy\\}
+\subsubsection{Procesy i podprocesy}
 Wykonywanie programów powoduje utworzenie oddzielnego procesu, który jest podprocesem interpretera poleceń. Proces ma dostęp do standardowych urządzeń wejść i wyjść: stdin, stout, stderr, oraz środowiska, które jest zestawem zmiennych z przypisanymi wartościami.
 
 \subsubsection{Potoki}
-Potoki to równoległe uruchomienie dwóch lub więcej poleceń z szeregowym połączeniem ich wejść i wyjść.
+Potoki (ang. pipeline) to równoległe uruchomienie dwóch lub więcej poleceń z szeregowym połączeniem ich wejść i wyjść.
 
 \subsubsection{Prawa dostępu}
 
@@ -994,8 +991,7 @@ Skrypty to pliki zawierające zestaw poleceń interpretera. Skrypt można urucho
 Standaryzuje między innymi: operatory arytmetyczne, lokalizacje, klasy mechanizmu globbingu, polecenia zagnieżdżone.
 
 
-\subsection{Wyrażenia regularne: sed, awk, grep} 
-
+\subsubsection{Wyrażenia regularne}
 \subsubsection{sed}
 
 sed (od ang. stream editor) – edytor strumieniowy, służy do przetwarzania tekstu.
@@ -1030,8 +1026,6 @@ Przykładowe opcje: \\
 -c –  wyświetla liczbę znalezionych linii.
 
 
-\subsection{Funkcje I/O niskiego poziomu, deskryptory, przegląd bibliotek systemu UNIX}
-
 \subsubsection{Funkcje I/O niskiego poziomu}
 Funkcje open, read, write, zwane wbudowanym systemem we/wy niskiego poziomu, są głównym systemem operacji na plikach i urządzeniach w Unixie.
 Odwołują się do otwartych plików przez numery deskryptorów.
@@ -1039,20 +1033,19 @@ Odwołują się do otwartych plików przez numery deskryptorów.
 \subsubsection{Deskryptory}
 To małe liczby przyporządkowane kolejno otwieranym plikom. Programy uzyskują najniższy wolny deskryptor. Jeśli inny proces otworzy ten sam plik otrzyma własny (inny lub ten sam) numer deskryptora. Operacja odczytu może przebiegać jednocześnie dla wielu procesów. Jeśli procesy otworzą jednocześnie plik do zapisu, nadpiszą się wzajemnie, konieczna jest synchronizacja w postaci blokad. 
 
-\subsubsection{Przegląd bibliotek systemu UNIX}
+\subsubsection{Wybrane biblioteki systemu UNIX}
 \begin{itemize}
-	\item \textbf{stdio} - 	działa podobnie jak operacje I/O niskiego poziomu.
+	\item \textbf{stdio} - 	działa podobnie jak operacje I/O niskiego poziomu
 	\item \textbf{string} 
 	\item \textbf{crypt} 
-	\item \textbf{ndbm} - tworzenie własnych baz danych dla dużej ilości danych i dużej przenoszalności.
+	\item \textbf{ndbm} - tworzenie własnych baz danych dla dużej ilości danych i dużej przenoszalności
+	\item \textbf{shm} - tworzenie obszarów pamięci współdzielonej
 \end{itemize}
-
-\subsection{Programowanie procesów: tworzenie, atrybuty, dziedziczenie atrybutów, współdzielenie zasobów. Sygnały, obsługa sygnałów. Komunikacja przez potoki}
 
 \subsubsection{Programowanie procesów}
 Procesy mają: kod programu w pamięci, środowisko (zmienne i wartości), zestaw dalszych informacji np. tablicę otwartych plików, priorytet. \\
 \\
-Tworzenie procesów poprzez klonowanie istniejącego procesu funkcją fork() (procesy potomek i rodzic). Podproces dziedziczy lub współdzieli pewne atrybuty i zasoby procesu nadrzędego. Proces kończy pracę normalnie (funkcja exit() lub koniec main()) lub anormlanie (synał lub funkcja abort()).\\ 
+Tworzenie procesów poprzez klonowanie istniejącego procesu funkcją \textbf{fork()} (procesy potomek i rodzic). Podproces dziedziczy lub współdzieli pewne atrybuty i zasoby procesu nadrzędnego. Proces kończy pracę normalnie (funkcja \textbf{exit()} lub koniec main()) lub anormlanie (synał lub funkcja abort()).\\ 
 \\
 Przykładowe atrybuty procesu:  PID, PPID, UID, terminal, blokady, maska sygnałów, ograniczenia zasobów.
 
@@ -1060,7 +1053,7 @@ Przykładowe atrybuty procesu:  PID, PPID, UID, terminal, blokady, maska sygnał
 
 Sygnały są mechanizmem asynchronicznego powiadamiania procesów o zdarzeniach. 
 
-Generuje je:
+Generują je:
 \begin{itemize}
 	\item błędy i wyjątki sprzętowe
 	\item pewne klawisze terminala
@@ -1071,10 +1064,6 @@ Generuje je:
 Reakcja procesu możliwa: ignorowanie, wywołanie funkcji, śmierć procesu.\\
 \\
 Tradycyjna obsługa procesów: zadeklarowanie innej niż domyślna obsługi sygnału ma charakter jednorazowy (zadziała inaczej tylko raz.
-
-
-
-\subsection{Komunikacja międzyprocesowa}  
 
 \subsubsection{Komunikacja przez potoki}
 \paragraph{Potok (ang. pipe)} to narzędzie szeregowej, jednokierunkowej komunikacji o własnościach:
@@ -1113,9 +1102,19 @@ Mają własności:
 \end{itemize}
 Istnieją semafory system V IPC oraz POSIX, choć te pierwsze są kłopotliwe w użyciu.
 
+\subsubsection{Pamięć współdzielona}
+Pamięć współdzielona jest specjalnie utworzonym segmentem wirtualnej przestrzeni adresowej, do którego dostęp może mieć wiele procesów - najszybszy sposób komunikacji pomiędzy procesami. 
+
+Podstawowy schemat korzystania z pamięci współdzielonej wygląda następująco: jeden z procesów tworzy segment pamięci współdzielonej, dowiązuje go powodując jego odwzorowanie w bieżący obszar danych procesu, opcjonalnie zapisuje w stworzonym segmencie dane. Następnie, w zależności od praw dostępu inne procesy mogą odczytywać i/lub zapisywać wartości w pamięci współdzielonej. Każdy proces uzyskuje dostęp do pamięci współdzielonej względem miejsca wyznaczonego przez jego adres dowiązania, stąd każdy proces korzystając z tych samych danych używa innego adresu dowiązania. W przypadku współbieżnie działających procesów konieczne jest najczęściej synchronizowanie dostępu np. za pomocą semaforów. Kończąc korzystanie z segmentu pamięci proces może ten segment odwiązać, czyli usunąć jego dowiązanie. Kiedy wszystkie procesy zakończą korzystanie z segmentu pamięci współdzielonej, za jego usunięcie najczęściej odpowiedzialny jest proces, który segment utworzył.
+
+\subsubsection{Muteksy}
+Muteksy (ang. MUTual EXclusion semaphores), stanowią szczególny rodzaj semaforów binarnych. Muteks może być zablokowany (ma wartość 1) lub odblokowany (ma wartość 0 - nie zablokowany). Jeśli jakieś zadanie zablokuje muteks (nada mu wartość 1), to tylko ono może ten muteks odblokować (nadać mu wartość 0). W ten sposób eliminowany jest problem równoczesnego użycia wspólnego zasobu (np. zmiennej globalnej) przez różne wątki/procesy.
+
 \section{Komputer, architektura i oprogramowanie}
 \paragraph{Komputer} [ang. < łac. computare 'rozważać', 'obliczyć'], elektroniczna maszyna cyfrowa, urządzenie elektroniczne przeznaczone do przetwarzania informacji (danych) przedstawionych w postaci cyfrowej, sterowane programem zapisanym w pamięci.
 Pojęcie komputera obejmuje obecnie zarówno komputery zaprogramowane na stałe, używane jako automaty sterujące, np. w urządzeniach gospodarstwa domowego, jak i komputery uniwersalne, dające się dowolnie zaprogramować.
+
+
 
 \subsection{Architektury} 
  
@@ -1192,15 +1191,14 @@ urządzeń AGD, gdzie kod programu nie zmienia się przez całe życie urządzen
 %\part{Zagadnienia kierunkowe}
 \bigskip
 \section{Programowanie strukturalne i obiektowe}
-
 \subsubsection{Programowanie strukturalne}
 Jest to ,,podparadygmat'' programowania proceduralnego. Opiera się na tworzeniu programów z kilku dobrze zdefiniowanych funkcji takich jak instrukcja warunkowa if-then-else i pętle, za to bez skoków (go to). Proponowane jest używanie tylko trzech struktur sterujących:
 \begin{itemize}
 \item \textbf{Sekwencja lub konkatencja} – wykonywanie instrukcji w określonej kolejności.
 \item \textbf{Wybór} – wykonywanie jednej z kilu instrukcji zależnie od stanu programu. Przykładem jest if-then-else i switch/case.
 \item \textbf{Iteracja} - przetwarzanie instrukcji tak długo, jak długo spełniony(lub niespełniony) jest dany warunek. Np. while, for.
-Te struktury stosuje się do ,,małych'' bloków programu złożonych z elementarnych instrukcji tj. podstawień, wywołań procedur/funkcji, instrukcji IO itd... Duże bloki powinny być rozbite na mniejsze (funkcje, procedury) tak aby rozumieć poszczególne fragmenty bez rozumienia całości. Podział ten ma również wpływ na jakość kodu, ponieważ procedura/funkcja może być używana wielokrotnie bez niepotrzebnego powielania kodu.
 \end{itemize}
+Te struktury stosuje się do ,,małych'' bloków programu złożonych z elementarnych instrukcji tj. podstawień, wywołań procedur/funkcji, instrukcji I/O itd... Duże bloki powinny być rozbite na mniejsze (funkcje, procedury) tak aby rozumieć poszczególne fragmenty bez rozumienia całości. Podział ten ma również wpływ na jakość kodu, ponieważ procedura/funkcja może być używana wielokrotnie bez niepotrzebnego powielania kodu.
 \medskip 
 
 \subsubsection{Programowanie obiektowe}
@@ -1222,6 +1220,7 @@ Języki wspierające programowanie obiektowe m.in.: C\#, Java, C++, JavaScript, 
 Źródło : materiały PW
 
 
+
 \section{Fala elektromagnetyczna: typy, parametry, właściwości}
 \subsection{Pojęcia}
 \paragraph{Pole elektryczne} – każdy ładunek wytwarza w przestrzeni wokół siebie pole elektryczne, siła elektrostatyczna działająca na dowolny ładunek jest wywołana polem elektrycznym, wytworzonym przez inne ładunki w miejscu w którym znajduje się rozważany ładunek.
@@ -1230,8 +1229,8 @@ Języki wspierające programowanie obiektowe m.in.: C\#, Java, C++, JavaScript, 
 
 \paragraph{Fala elektromagnetyczna} – jest to rozchodząca się z prędkością c fala pola elektrycznego i magnetycznego. Fale elektromagnetyczne można podzielić na:
 \begin{itemize}
-\item Fale stojące (punkty o jednakowej fazie nie przemieszczają się) np. wnęka rezonansowa
-\item Bieżące (punkty o jednakowej fazie poruszają się) – rozchodzące się wzdłuż linii przesyłowej lub wolnej przestrzeni
+\item \textbf{fale stojące} (punkty o jednakowej fazie nie przemieszczają się) np. wnęka rezonansowa,
+\item \textbf{bieżące} (punkty o jednakowej fazie poruszają się) – rozchodzące się wzdłuż linii przesyłowej lub wolnej przestrzeni.
 \end{itemize}
 
 \begin{figure}[htbp]
@@ -1390,34 +1389,12 @@ Prąd kolektora w pierwszym przybliżeniu jest proporcjonalny do prądu bazy. Wi
 
 \subsection{Tranzystory unipolarne (polowe)}
 
+\paragraph{Tranzystory unipolarne (polowe)} – są elementami półprzewodnikowymi, trójelektrodowymi, które w przeciwieństwie do normalnych tranzystorów bipolarnych są sterowane polem elektrycznym tzn. bez poboru mocy. Działanie tranzystorów polowych opiera się na sterowaniu przepływem prądu przez kanał za pomocą pola elektrycznego wytwarzanego przez napięcie doprowadzane do elektrody nazywanej bramką. Nie ma tu żadnych przewodzących złącz, więc do bramki nie wpływa ani z niej nie wypływa prąd (za wyjątkiem prądu upływu).  
 
-\paragraph{Tranzystory unipolarne (polowe)} – są elementami półprzewodnikowymi, trójelektrodowymi, które w przeciwieństwie do normalnych tranzystorów bipolarnych są sterowane polem elektrycznym tzn. bez poboru mocy. Działanie tranzystorów polowych opiera się na sterowaniu przepływem prądu przez kanał za pomocą pola elektrycznego wytwarzanego przez napięcie doprowadzane do elektrody nazywanej bramką. Nie ma tu żadnych przewodzących złącz, więc do bramki nie wpływa ani z niej nie wypływa prąd (za wyjątkiem prądu upływu). Podobnie jak w przypadku tranzystorów bipolarnych, istnieją tranzystory polowe o dwóch różnych rodzajach przewodnictwa: z kanałem typu n (przewodnictwo elektronowe) oraz z kanałem typu p (przewodnictwo dziurowe). Tranzystory polowe mogą być wykonane z dwoma różnymi rodzajami bramek (mamy wiec tranzystory złączowe - JFET i z izolowaną bramką - MOSFET) oraz mogą różnić się sposobem domieszkowania materiału półprzewodnikowego tworzącego kanał (tranzystory ze zubożaniem - rzadko produkowane, i ze wzbogacaniem kanału). 
-
-
-
-\subsubsection{Budowa JFET (tranzystora polowego złączowego)}
-W tranzystorach JFET, bramka oraz kanał tworzą ze sobą złącze PN lub NP, które zachowuje się jak dioda półprzewodnikowa. Obszar kanału jest słabiej zdomieszkowany (zubożony).
-Budowa tranzystora JFET została przedstawiona na rysunku \ref{rys:budowa_jfet}. 
-\begin{figure}[htbp]
-\centering
-\includegraphics[scale=0.8]{obrazy/tranzystory/tranunijfetbudowa.png}
-\caption{Budowa JFET}
-\label{rys:budowa_jfet}
-\end{figure}
-
-
-\subsubsection{Budowa MOSFET (tranzystora polowego z izolowaną bramką)}
-Najważniejszą cechą tranzystora polowego jest brak prądu bramki. Obszar kanału jest izolowany od bramki cienką warstwą dwutlenku krzemu. Budowa MOSFET'a została ukazana na rysunku \ref{rys:budowa_mosfet}.
-\begin{figure}[htbp]
-\centering
-\includegraphics[scale=0.8]{obrazy/tranzystory/tranunimosfetbud.png}
-\caption{Budowa MOSFET}
-\label{rys:budowa_mosfet}
-\end{figure}
-
-\newpage
 \subsubsection{Rodzaje tranzystorów polowych}
 Klasyfikacja pod względem polaryzacji napięć wejściowych i wyjściowych (ze źródłem dołączonym do masy) została ukazana na rys. \ref{rys:tranUni_klas_we/wy}. Natomiast podział, symbole graficzne, charakterystyki i zastosowania tranzystorów polowych umieszczono w tabeli na końcu niniejszego opracowania.
+
+Podobnie jak w przypadku tranzystorów bipolarnych, istnieją tranzystory polowe o dwóch różnych rodzajach przewodnictwa: z kanałem typu n (przewodnictwo elektronowe) oraz z kanałem typu p (przewodnictwo dziurowe). Tranzystory polowe mogą być wykonane z dwoma różnymi rodzajami bramek (mamy wiec tranzystory złączowe - JFET i z izolowaną bramką - MOSFET) oraz mogą różnić się sposobem domieszkowania materiału półprzewodnikowego tworzącego kanał (tranzystory ze zubożaniem - rzadko produkowane, i ze wzbogacaniem kanału).
 
 \begin{figure}[htbp]
 \centering
@@ -1427,40 +1404,60 @@ Klasyfikacja pod względem polaryzacji napięć wejściowych i wyjściowych (ze 
 \end{figure}
 
 
-\subsubsection{Właściwości tranzystorów polowych}
+\subsubsection{JFET (polowy złączowy)}
+\paragraph{Budowa\\}
+W tranzystorach JFET, bramka oraz kanał tworzą ze sobą złącze PN lub NP, które zachowuje się jak dioda półprzewodnikowa. Obszar kanału jest słabiej zdomieszkowany.
+Budowa tranzystora JFET została przedstawiona na rysunku \ref{rys:budowa_jfet}. 
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.7]{obrazy/tranzystory/tranunijfetbudowa.png}
+\caption{Budowa JFET}
+\label{rys:budowa_jfet}
+\end{figure}
 
-
-Jak wynika z powyższych rysunków w normalnym użyciu znajduję się pięć typów tranzystorów polowych. Jednakże, niekoniecznie trzeba pamiętać właściwości każdego z nich gdyż wszystkie zachowują się podobnie. Przykładając jakieś napięcie do bramki (G) sterujemy rezystancją między drenem (D), a źródłem (S). Napięcie sterującym jest napięcie bramka-źródło ($U_{GS}$). Omówione zostaną cechy tranzystora MOSFET z kanałem wzbogacanym typu N.
-
+\paragraph{Zasada działania\\}
 W tranzystorach JFET bramka i leżący pod nią kanał tworzą złącze półprzewodnikowe. Konieczne jest kontrolowanie polaryzacji napięcia między bramką a kanałem, aby nie dopuścić do spolaryzowania złącza w kierunku przewodzenia - zapobiec przepływowi prądu w obwodzie bramki. Dla przykładu, dla tranzystora typu n dioda będzie przewodzić, jeśli napięcie pomiędzy bramką a źródłem osiągnie wartość +0.6 V. W normalnych warunkach pracy złącze bramka-kanał jest spolaryzowane zaporowo i w obwodzie bramki nie płynie żaden prąd (z wyjątkiem prądu upływności złącza).
 
+Źródło i dren tranzystora polowego są spolaryzowane tak, aby umożliwić przepływ nośników większościowych przez kanał w kierunku od źródła do drenu. W tranzystorze z kanałem typu P od źródła do drenu przepływają dziury, a w tranzystorze z kanałem typu N od źródła do drenu przepływają elektrony. Złącze bramka-kanał w obu tranzystorach powinny być spolaryzowane w kierunku zaporowym.
+Jeżeli napięcie $U_{GS} = 0$ i $U_{DS}$ ma małą wartość, to prąd zmienia się liniowo w funkcji przykładnego napięcia – tranzystor zachowuje się jak rezystor. Podczas narastania napięcia $U_{DS}$, złącze kanał-bramka (PN) jest coraz silniej polaryzowane zaporowo, przy czym polaryzacja ta jest silniejsza w pobliżu drenu. Przy pewnej wartości napięcia $U_{DS} = U_{DSsat} = U_P$, następuje zamknięcie (odcięcie) kanału przy drenie. 
+
+Dalszy wzrost napięcia powoduje, że kanał jest zamykany coraz bliżej źródła. Przyrost napięcia rozkłada się na warstwie zaporowej, nie powodując dalszego wzrostu prądu. Rozszerza się warstwa zaporowa, czyli zwiększa głębokość jej wnikania w kanał. Tranzystor wchodzi w stan nasycenia, a prąd przez niego płynący jest prądem nasycenia.
+
+
+
+
+\subsubsection{MOSFET (polowy z izolowaną bramką)}
+\paragraph{Budowa\\}
+Najważniejszą cechą tranzystora polowego jest brak prądu bramki. Obszar kanału jest izolowany od bramki cienką warstwą dwutlenku krzemu. Budowa MOSFET'a została ukazana na rysunku \ref{rys:budowa_mosfet}.
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.7]{obrazy/tranzystory/tranunimosfetbud.png}
+\caption{Budowa MOSFET}
+\label{rys:budowa_mosfet}
+\end{figure}
+
+\paragraph{Zasada działania\\}
+Zasada działania tranzystora MIS (MOS) zostanie omówiona na przykładzie najczęściej spotykanej polaryzacji, tj. przy zwartym źródle i podłożu. Jeżeli do bramki zostanie przyłożone napięcie dodatnie,to powstanie kanał wzbogacony, a jeśli ujemne, to powstanie kanał zubożony. W tranzystorze z kanałem wzbogaconym, wzrost napięcia $U_{GS}$ powyżej wartości napięcia progowego $U_T$ powoduje powstanie kanału.
+
+Napięcie progowe $U_T$ jest to napięcie, jakie należy przyłożyć do bramki, aby powstała warstwa inwersyjna.
+Każdy następny przyrost napięcia $U_{GS}$ powoduje przyrost ładunku wprowadzanego przez bramkę, który jest kompensowany ładunkiem nośników powstającego kanału. W tranzystorze z kanałem zubożonym, wzrost napięcia $U_{GS}$ powoduje silniejsze zubożenie kanału, aż wreszcie przy pewnej jego wartości, równej tzw. napięciu odcięcia Ugsoft, kanał zanika.
+
+Jeżeli napięcia $U_{DS}$. i $U_{GS}$ będą porównywalne, to prąd drenu będzie zależny liniowo od napięcia $U_{DS}$ – kanał pełni wówczas funkcję rezystora liniowego. Dalszy wzrost napięcia $U_{DS}$ powoduje, tak jak w tranzystorze złączowym, spadek napięcia na rezystancji kanału. W okolicy drenu następuje zmniejszanie inwersji, aż do całkowitego jej zaniku. Mówimy wtedy o odcięciu kanału. Wartość napięcia $U_{DS}$, przy której następuje odcięcie kanału nazywamy napięciem nasycenia.
+
+Dalszy wzrost napięcia $U_{DS}$ nie powoduje już wzrostu prądu drenu, ale wpływa na odcięcie kanału bliżej źródła. Mówimy wówczas, że tranzystor pracuje w stanie nasycenia.
 
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[scale=0.6]{obrazy/tranzystory/tranunicharpor.png}
-\caption{Porównanie charakterystyki MOSFET ze zubożeniem i wzbogaceniem}
+\caption{Porównanie charakterystyki MOSFET z kanałem zubożanym i wzbogacanym}
 \label{rys:tranUni_charporow}
 \end{figure}
 
 
+\subsubsection{Podstawowe charakterystyki}
 
-Po pierwsze, dla źródła dołączonego do masy, każdy tranzystor polowy jest wprowadzany w stan przewodzenia (,,włączany'') przez taką zmianę napięcia bramki, aby wartość tego napięcia dążyła do wartości napięcia zasilającego dren w warunkach aktywnej pracy tranzystora.
-
-
-Po drugie, ze względu na prawie symetryczną konstrukcję tranzystora polowego złączowego, zarówno dren jak i źródło mogą pracować, jako rzeczywiste źródło prądowe (wyjątek stanowią tranzystory MOS mocy, w których podłoże jest połączone ze źródłem wewnątrz obudowy).
-
-Im większa jest wartość napięcia między między bramką a źródłem ($U_{GS}$ tym większa jest wartość prądu drenu ($I_D$).
-
-Podobnie jak tranzystor n-p-n, tranzystor polowy charakteryzuję się dużą przyrostową wartością impedancji obwodu drenu. Przejawia się to stałą wartością prądu drenu, niezależną od wartości napięcia $U_{DS}$ jeśli tylko wartość tego napięcia jest większa od, powiedzmy, 1 V.
-Im większa jest wartość napięcia między bramką a źródłem tym większa jest wartość prądu drenu.
-W obszarze nasycenia, czyli w normalnym obszarze pracy FET-a prąd drenu nie jest szybkozmienna funkcją napięcia $U_{GS}$. Prąd drenu jest proporcjonalny do $(U_{GS}-U_T)^2$,  gdzie $U_T$ jest napięciem progowym czyli napięciem $U_{GS}$ dla którego zaczyna płynąć prąd drenu.
-
-\paragraph{Podstawowe charakterystyki}
-
-
-\subparagraph{Przejściowa} – zależność prądu drenu ($I_D$) od napięcia bramka-źródło ($U_{GS}$) przy stałym napięciu dren-źródło ($U_{DS}$). Ukazaną ją na rys. \ref{rys:tranUniIdUgs}.
-
+\paragraph{Przejściowa} – zależność prądu drenu ($I_D$) od napięcia bramka-źródło ($U_{GS}$) przy stałym napięciu dren-źródło ($U_{DS}$). Ukazaną ją na rys. \ref{rys:tranUniIdUgs}.
 
 \begin{figure}[htbp]
 \centering
@@ -1469,8 +1466,16 @@ W obszarze nasycenia, czyli w normalnym obszarze pracy FET-a prąd drenu nie jes
 \label{rys:tranUniIdUgs}
 \end{figure}
 
+\paragraph{Wyjściowa} – zależność prądu drenu ($I_D$) od napięcia dren-źródło($U_{DS}$), przy stałym napięciu bramka-źródło ($U_{GS}$).
 
-\subparagraph{Wyjściowa} – zależność prądu drenu ($I_D$) od napięcia dren-źródło($U_{DS}$), przy stałym napięciu bramka-źródło ($U_{GS}$). Cały obszar charakterystyki wyjściowej można podzielić na dwie części: obszar nasycenia i obszar nienasycenia (liniowy). Na rysunku \ref{rys:tranUniChWyj} obszary te są rozdzielone niebieską linią, której kształt przypomina parabolę.
+Na rysunku \ref{rys:tranUniChWyj}. przedstawiona jest charakterystyka wyjściowa $I_D(U_{DS}$) tranzystora MOSFET z kanałem typu n.
+
+Cały obszar charakterystyki wyjściowej można podzielić na dwie części: obszar nasycenia i obszar nienasycenia (liniowy). Obszary te są rozdzielone niebieską linią, której kształt przypomina parabolę.
+   
+W obszarze nasycenia tranzystor polowy zachowuje się jak bardzo dobry element transkonduktancyjny, tzn. taki dla którego prąd $I_D$ jest praktycznie stały dla różnych napięć $U_{DS}$. Natomiast dla małych wartości $U_{DS}$, czyli w obszarze nienasycenia, zachowuje się on jak rezystor, tzn. $I_D$ jest proporcjonalny do $U_{DS}$. Oczywiście dla obu obszarów prąd drenu $I_D$ jest funkcją napięcia bramka-źródło $U_{GS}$, a ściślej rzecz biorąc jest funkcją różnicy ($U_{GS} - U_P$), gdzie $U_P$ jest napięciem progowym. Obszar liniowy, w którym prąd drenu jest prawie proporcjonalny do $U_{DS}$, rozciąga się od $U_{DS}=0~V$ do $U_{DS}= U_{DSsat}$. Na prawo od $U_{DSsat}$ charakterystyki prądu drenu $I_D$ biegną prawie poziomo.
+
+W obszarze nienasycenia nachylenie charakterystyki czyli $I_D/U_{DS}$, jest proporcjonalne do ($U_{GS}- U_P$). Napięcie dren-źródło, dla którego następuje wejście charakterystyki prądu drenu do obszaru nasycenia jest równe $U_{DSsat}=(U_{GS}- U_P)$. W efekcie daje to proporcjonalność prądu nasycenia drenu $I_{Dsat}$ do $(U_{GS}- U_P)^2$, czyli kwadratową zależność prądu drenu od napięcia sterującego.
+
 
 \begin{figure}[htbp]
 \centering
@@ -1482,10 +1487,18 @@ W obszarze nasycenia, czyli w normalnym obszarze pracy FET-a prąd drenu nie jes
 W zakresie liniowym (nienasycenia) tranzystor unipolarny zachowuje się jak rezystor półprzewodnikowy. Prąd $I_D$ ze wzrostem napięcia $U_{DS}$ wzrasta w przybliżeniu liniowo.
 W zakresie nasycenia napięcie $U_{DS}$ bardzo nieznacznie wpływa na prąd drenu, natomiast bramka zachowuje właściwości sterujące.
 
+\subsubsection{Zalety tranzystorów polowych}
+\begin{itemize}
+\item duża rezystancja wejściowa
+\item małe szumy w porównaniu z tranzystorami bipolarnymi (w zakresie małych i średnich częstotliwości)
+\item możliwość autokompensacji temperaturowej
+\item odporność na promieniowanie
+\item małe wymiary powodują, że są one coraz powszechniej stosowane w układach analogowych i cyfrowych
+\end{itemize}
 
 \section{Systemy ciągłe i dyskretne: klasyfikacja, opis}
 
-\paragraph{System} można rozumieć jako pewien  blok, który odpowiada na zadany sygnał wejściowy (pobudzenie) jednym lub więcej sygnałami wyjściowym.
+\paragraph{System} można rozumieć jako pewien  blok, który odpowiada na zadany sygnał wejściowy (pobudzenie) jednym lub więcej sygnałami wyjściowymi.
 
 \begin{figure}[htbp]
 \centering
@@ -1587,11 +1600,10 @@ system statyczny jest niezmienny w czasie, może być abstrakcyjny lub fizyczny,
 \subsection{Zmienne losowe}
 
 \paragraph{Zmienna losowa} X to taka funkcja $X : \Omega \longrightarrow \mathbb{R}$, dla którego dla dowolnego borelowskiego zbioru $B \subset \mathbb{R}$ zbiór:
-\begin{equation}
-\{\omega : X(\omega) \in B \} = \{X \in B\} \in F,
-\end{equation}
-tzn. zbiór $X \in B$ jest zdarzeniem losowym.\\\\
-Innymi słowy, jest to taka funkcja $X$ na zbiorze zdarzeń elementarnych o wartościach liczbowych, dla której określone są (teoretycznie) prawdopodobieństwa przyjmowania przez $X$ wartości z każdego dowolnego zakresu.\\\\
+\[\{\omega : X(\omega) \in B \} = \{X \in B\} \in F,\]
+tzn. zbiór $X \in B$ jest zdarzeniem losowym.\\
+
+Innymi słowy, jest to taka funkcja $X$ na zbiorze zdarzeń elementarnych o wartościach liczbowych, dla której określone są (teoretycznie) prawdopodobieństwa przyjmowania przez $X$ wartości z każdego dowolnego zakresu.\\
 
 Zmienna losowa to funkcja przekształcająca wynik eksperymentu losowego na liczbę rzeczywistą. 
 
@@ -1599,14 +1611,59 @@ Pojęcie zmiennej losowej jest bardzo użyteczne, pozwala na abstrahowanie od po
 
 Wyobraźmy sobie rzut kostką sześciościenną. Jest to przykład eksperymentu losowego, czyli eksperymentu, dla którego wiemy jakie sytuacje mogą się wydarzyć, ale nie wiemy która się wydarzy. Możliwe wyniki eksperymentu są najróżniejsze, np. kostka będzie turlała się przez 2 minuty i wypadnie sześć oczek, kostka spadnie ze stołu i wypadnie jedno oczko itp. 
 
-Zmienna losowa to funkcja przedstawiająca wynik eksperymentu w postaci liczby rzeczywistej. Rozważając eksperyment rzutu kostką nie jest dla nas istotne co działo się z kostką, istotne jest jedynie ile oczek wypadło. Dlatego naturalnym wyborem zmiennej losowej jest funkcja określająca liczbę oczek które wypadły w wyniku rzutu kostką. \\\\
-Typy zmiennych losowych:
+Zmienna losowa to funkcja przedstawiająca wynik eksperymentu w postaci liczby rzeczywistej. Rozważając eksperyment rzutu kostką nie jest dla nas istotne co działo się z kostką, istotne jest jedynie ile oczek wypadło. Dlatego naturalnym wyborem zmiennej losowej jest funkcja określająca liczbę oczek które wypadły w wyniku rzutu kostką.
+\subsubsection{Typy zmiennych losowych}
 \begin{itemize}
 \item \textbf{ciągła} - zmienna przyjmuje dowolne wartości z określonego przedziału (w szczególności cały zbiór liczb rzeczywistych),
 \item \textbf{skokowa (dyskretna)} - zmienna przyjmuje dowolne wartości ze zbioru przeliczalnego (np. zbiór liczb całkowitych z określonego przedziału),
 \item \textbf{osobliwa} - zmienna losowa, której rozkład skupiony jest na nieprzeliczalnym zbiorze o długości 0 (np. na zbiorze Cantora), tzn. prawdopodobieństwo tego, ze zmienna ta przyjmuje wartość z tego zbioru, wynosi 1, przy czym $P(X = x) = 0$ dla każdego $x \in \mathbb{R}$,
 \item dowolna zmienna losowa albo jest jednego z trzech powyższych typów, albo ma rozkład \textbf{mieszany} składający się z rozkładów tych typów.
 \end{itemize}
+
+\subsection{Rozkłady zmiennej losowej}
+\paragraph{Rozkład prawdopodobieństwa} danej zmiennej losowej $X$ jest to funkcja przyporządkowująca wartościom zmiennej losowej prawdopodobieństwa przyjęcia danej wartości przez tę zmienną.
+
+Dla ciągłego rozkładu prawdopodobieństwa określa się funkcję gęstości prawdopodobieństwa, z której całka oznaczona w granicach a, b równa jest prawdopodobieństwu tego, że zmienna losowa należy do przedziału (a, b).
+
+Rozkład zmiennej losowej określa z jakim prawdopodobieństwem zmienna losowa przyjmuje poszczególne wartości. 
+
+\paragraph{Typy rozkładów zmiennej losowej}
+\begin{itemize}
+\item ciągły,
+\item dyskretny (skokowy) - jeżeli zmienna losowa może przyjmuje skończenie wiele lub przeliczalnie wiele wartości,
+\item ani dyskretny ani ciągły.
+\end{itemize}
+
+
+Rozkłady ciągłe można opisać funkcją nazywaną gęstością. Rozkłady dyskretne można opisać podając prawdopodobieństwo wystąpienia każdego z możliwych zdarzeń. 
+
+\paragraph{Parametry rozkładu}
+\begin{itemize}
+\item dystrybuanta w punkcie x, to prawdopodobieństwo, że zmienna losowa przyjmie wartość mniejszą lub równą x,
+\item prawdopodobieństwo w punkcie x (dla rozkładów dyskretnych), to prawdo-podobieństwo, że zmienna losowa przyjmie wartość x,
+\item gęstość w punkcie x(dla rozkładów ciągłych), to pochodna dystrybuanty,
+\item kwantyl w punkcie q, to wartość x, dla której prawdopodobieństwo, że zmienna losowa przyjmie wartość mniejszą lub równą x jest równe q(kwantyl to funkcja odwrotna dla dystrybuanty).
+\end{itemize}
+Przykłady rozkładów ciągłych i dyskretnych przedstawiono w tabeli \ref{tab:przyklady_rozkladow}.
+
+\begin{table}[h]
+\centering
+\caption{Przykłady rozkładów prawdopodobieństwa}
+\label{tab:przyklady_rozkladow}
+\begin{tabular}{|c|c|}
+  \hline 
+  \textbf{Ciągłe} & \textbf{Dyskretne}\\
+  \hline
+  jednostajny & Boltzmanna \\
+  \hline
+  normalny & Bernoulliego \\
+  \hline
+  wykładniczy & Poissona \\
+  \hline
+    t-Studenta & jednopunktowy \\
+  \hline
+\end{tabular} 
+\end{table}
 
 \subsection{Dystrybuanta i jej własności}
 \paragraph{Dystrybuanta} zmiennej losowej X  jest to funkcja zdefiniowana następująco:
@@ -1623,16 +1680,16 @@ Własności dystrybuanty:
 \item $\lim_{x \to - \infty} F(x) = 0, ~~\lim_{x \to + \infty} F(x) = 1.$
 \end{enumerate}
 \medskip
-Dystrybuanta zmiennej losowej \emph{ciągłej} $X$ jest to funkcja podana wzorem:
+Dystrybuanta zmiennej losowej \textbf{ciągłej} $X$ jest to funkcja podana wzorem:
 \begin{equation}
 F(x) = P(X < x) = \int_{-\infty}^{x} f(x)~dx.
 \end{equation}
 \medskip
-Dystrybuanta zmiennej losowej \emph{skokowej} X jest to funkcja podana wzorem:
+Dystrybuanta zmiennej losowej \textbf{skokowej} $X$ jest to funkcja podana wzorem:
 \begin{equation}
 F(x)=\sum_{x_i < p_i}^{} p_i.
 \end{equation}
-
+Znając rozkład, możemy znaleźć dystrybuantę i na odwrót.
 \subsection{Funkcja gęstości}
 
 \paragraph{Funkcja gęstości zmiennej losowej ciągłej} to funkcja $f(x)$ okreslona na zbiorze liczb rzeczywistych i spełniająca następujące warunki:
@@ -1641,18 +1698,17 @@ F(x)=\sum_{x_i < p_i}^{} p_i.
 \item $f(x) \ge 0$ - jest określona nieujemnie,
 \item $ \int_{-\infty}^{+ \infty} f(x)~dx = 1$.
 \end{enumerate}
-
-\paragraph{Mediana} $M$ to taka wartość zmiennej losowej $x$ dla której dystrybuanta wynosi 1/2.
-\begin{equation}
-F(x_{0.5}) = P(x < x_{0.5}) = 0.5
-\end{equation}
-
-
 Gęstość prawdopodobieństwa to szansa przyjęcia konkretnej wartości
 przez zmienną losową. Dystrybuanta to szansa przyjęcia przez zmienną
 losową wartości nie większej od argumentu.
 
+
 \subsection{Podstawowe parametry rozkładu zmiennej losowej}
+\paragraph{Mediana} $M$ to taka wartość zmiennej losowej $x$ dla której dystrybuanta wynosi 1/2.
+\begin{equation}
+F(x_{0.5}) = P(x < x_{0.5}) = 0.5
+\end{equation}
+\rule{\textwidth}{1pt}
 \paragraph{Wartość oczekiwana} $E(X)$ (nadzieja matematyczna)
 \begin{equation}
 E(x) = m.
@@ -1661,26 +1717,40 @@ Wartość $m$ jest to taka wartość zmiennej losowej $X$, wokół której skupi
 wyniki wielokrotnych realizacji tej zmiennej. Innymi słowy, oczekuje się (ma
 się nadzieje), że wielokrotne realizacje zmiennej losowej $X$ będą skupiały się
 wokół liczby $m$. Wartość oczekiwana należy do miar położenia. \\\\
-Dla zmiennych losowych \textbf{ciągłych} wzór wygląda następująco:
+- Wartością oczekiwaną zmiennej losowej $X$ typu \textbf{ciągłego} o funkcji gęstości prawdopodobieństwa $f$ nazywamy liczbę:
 \begin{equation}
-E(x) = \int_{-\infty}^{+ \infty} xf(x)~dx.
+EX = \int_{-\infty}^{+ \infty} xf(x)~dx,
 \end{equation}
-Dla zmiennych losowych \textbf{dyskretnych} wzór wygląda następująco:
+przy założeniu, że całka $\int_{-\infty}^{+ \infty} |x|f(x)~dx$ jest zbieżna.\\\\
+- Wartością oczekiwaną zmiennej losowej $X$ typu \textbf{skokowego} o rozkładzie $p_i=P(X=x_i)$, gdzie\linebreak $i\in \{1,2,...\}$ nazywamy liczbę:
 \begin{equation}
-E(x) = \sum_{i=1}^{n} p_i \cdot x_i.
+EX = \sum_{i=1} x_i \cdot  p_i,
 \end{equation}
-\medskip
-\paragraph{Wariancja} należy do miar rozproszenia. Można ją wyliczyć wykorzystując wzór:
+przy założeniu, że suma $\sum_{i=1} x_i \cdot  p_i$ jest skończona albo szereg nieskończony $\sum_{i=1}^{\infty} |x_i| \cdot  p_i$ jest zbieżny.
+\rule{\textwidth}{1pt}
+\paragraph{Wariancja} jest miarą rozrzutu (rozproszenia) wartości zmiennej losowej wokół wartości oczekiwanej. Można ją wyliczyć wykorzystując wzór:
 \begin{equation}
-V(x) = E[X - E(X)]^2 = E(X^2)-E(X)^2
+D^2(X) = E[X - EX]^2 = E(X^2)-E(X)^2
 \end{equation}
-\medskip
-
+Jeżeli $X$ jest zmienną losową typu ciągłego o funkcji gęstości prawdopodobieństwa $f$ i wartości oczekiwanej $EX=m$, to:
+\begin{equation}
+D^2(X) = \int_{-\infty}^{+ \infty} (x-m)^2f(x)~dx.
+\end{equation}
+Jeżeli $X$ jest zmienną losową typu skokowego o rozkładzie $p_i=P(X=x_i)$, $i \in \{1,2,...\}$, i wartości oczekiwanej $EX=m$, to:
+\begin{equation}
+D^2(X) = \sum_{i} (x_i -m)^2p_i.
+\end{equation}
+\rule{\textwidth}{1pt}
 \paragraph{Odchylenie standardowe} informuje jak szeroko wartości jakiejś wielkości są rozrzucone wokół jej średniej. 
 \begin{equation}
-\sigma = \sqrt{V(x)}.
+\sigma = \sqrt{D^2(X)}.
 \end{equation}
-
+\rule{\textwidth}{1pt}
+\paragraph{Modą} $M_o$ zmiennej losowej $X$ nazywamy:
+ \begin{itemize}
+ \item w przypadku zmiennej losowej typu ciągłego - wartość, dla której gęstość prawdopodobieństwa przyjmuje maksimum lokalne;
+ \item w przypadku zmiennej losowej typu skokowego - wartość zmiennej losowej, której odpowiada największe prawdopodobieństwo.
+ \end{itemize}
 
 
 \section{Ciągła, dyskretna i szybka transformata Fouriera, widmo sygnału}
@@ -1691,16 +1761,30 @@ W dziedzinie przetwarzania sygnałów \textbf{transformacja} Fouriera używana j
 \paragraph{Transformata Fouriera} - wynik operatora liniowego (czyli jednorodny [$ cf(x) = f(cx) $] i addytywny [$f(a+b)=f(a)+f(b)$] ) jakim jest \textbf{transformacja} Fouriera. Dzięki liniowości możemy transformować sygnały rzeczywiste, w innym przypadku byłyby to jedynie sygnały zawierające pojedynczy przebieg sinusoidalny.
 
 Dla funkcji $f(x)$ transformatę Fouriera definiujemy następująco:
-$$ F(s) = \int\limits_{-\infty}^{+\infty} f(x)\ e^{- 2\pi i x s}\,dx, $$
-
+\begin{equation}
+F(s) = \int\limits_{-\infty}^{+\infty} f(x)\ e^{- 2\pi i x s}\,dx,
+\end{equation}
 a transformację odwrotną
+\begin{equation}
+f(x) = \int\limits_{-\infty}^{+\infty} F(s)\ e^{2\pi i x s}\,ds.
+\end{equation}
 
-$$ f(x) = \int\limits_{-\infty}^{+\infty} F(s)\ e^{2\pi i x s}\,ds. $$
+\subsection{FT w dziedzinie czasu}
+Transformacja z dziedziny czasu t w dziedzinę pulsacji (częstości kołowej) $\omega$:
+\begin{equation}
+\hat{f}(\omega) =\int\limits_{-\infty}^{\infty}f(t)e^{-i\omega t}~dt,
+\end{equation}
+i transformacja odwrotna:
+\begin{equation}
+f(t) = \frac{1}{2\pi} \int\limits_{-\infty}^{\infty}\hat{f}(\omega)e^{i\omega t}~d\omega.
+\end{equation}
+
 
 \subsection{Dyskretna transformata Fouriera (DFT)}
 W praktyce pomiary pozwalają otrzymać dane o charakterze dyskretnym, stąd też zdefiniowana jest dyskretna transformata Fouriera (dyskretne przekształcenie Fouriera, DFT), używana w cyfrowym przetwarzaniu sygnałów:
-
-\[ X(m)= \sum_{n=0}^{N-1}{x(n) e^{- \frac{2 \pi i n m}{N}}}, \ 0 \le k \le N-1, \]
+\begin{equation}
+X(m)= \sum_{n=0}^{N-1}{x(n) e^{- \frac{2 \pi i n m}{N}}}, \ 0 \le k \le N-1,
+\end{equation}
 gdzie:\\
 x(n) - dyskretny ciąg wartości ciągłej zmiennej x(t), spróbkowanej w dziedzinie czasu, \\
 N – liczba próbek wejściowych w dziedzinie czasu. \\\\
@@ -1713,14 +1797,18 @@ DFT wyznacza zawartość widmową sygnału wejściowego w $N$ równomiernie roz�
 	\item Wyjściowe wartości amplitud prążków DFT są równe amplitudzie wejściowej danej składowej (sinusoidy) * N/2.
 	\item Jeżeli ciąg wejściowy $ x(n) $ jest rzeczywisty, to zespolone wartości wyjściowe DFT dla argumentów $ m \ge (N/2) $ są nadmiarowe w stosunku do wartości wyjściowych dla argumentów od $ m = 0 $ do $ m = (N/2)-1 $. \textit{m}-ta wartość wyjściowa DFT będzie miała taką samą amplitudę jak $(N-m)$-ta wartość wyjściowa DFT. Kąt fazowy $m$-tej wartości będzie równy kątowi fazowemu $(N-m)$-tej wartości wyjściowej DFT, ze znakiem ujemnym. \\\\
 	Jeżeli ciąg wyjściowy DFT jest rzeczywisty, to $X(m)$ jest sprzężeniem $X(Nm)$, lub:
-$$ X(m) = X^*(N-m) $$
+\begin{equation}
+X(m) = X^*(N-m)
+\end{equation}
 gdzie $ ^* $ oznacza sprzężenie.
 \end{itemize}
 
-\paragraph{Podsumowanie}
+\subsubsection{Podsumowanie}
 \begin{itemize}
 	\item Każdy człon wyjściowy DFT jest sumą iloczynów wejściowego ciągu w dziedzinie czasu z ciągami reprezentującymi przebieg sinusoidalny i cosinusoidalny, ponieważ można napisać wzór na DFT z użyciem współrzędnych prostokątnych:
-	$$ X(m)= \sum_{n=0}^{N-1}{x(n) [\cos(\frac{2 \pi n m}{N}) - i \sin(\frac{2 \pi n m}{N})]}.   $$
+	\begin{equation}
+	X(m)= \sum_{n=0}^{N-1}{x(n) [\cos(\frac{2 \pi n m}{N}) - i \sin(\frac{2 \pi n m}{N})]}.
+	\end{equation}
 	\item Dla rzeczywistych sygnałów wejściowych N-punktowa DFT daje w wyniku jedynie N/2 członów niezależnych.
 	\item DFT jest operacją liniową.
 	\item Amplitudy składowych wyjściowych DFT są wprost proporcjonalne do N,
@@ -1894,9 +1982,9 @@ Architektura zakłada, że podział przestrzeni adresowej na pamięć programu i
 \subparagraph{Architektura super-harwardzka}
 Pamięć programu i pamięć danych są oddzielone od siebie, ale wykorzystują one wspólną magistrale: danych i adresową.
 
-\subparagraph{CISC} (ang. Complex Instruction Set Computing) to architektura konwencjonalnych procesorów. Charakteryzuje się ona znaczną liczbą elementarnych rozkazów i trybów adresowania przy niewielkiej liczbie rejestrów uniwersalnych. Jest ona bardzo wolna w porównaniu do RISC-ów. Na tej architekturze były oparte pierwsze procesory z rodziny x86. Dziś w tej rodzinie nie spotka się procesora CISC, ale jest ona zastąpiona przez wewnętrzy RISC. Jednak pozostała zgodnie z zasadą"kompatybilności w tył" mała liczba rejestrów, co jest główną bolączką projektantów procesorów x86.
+\subparagraph{CISC} (ang. Complex Instruction Set Computing) to architektura konwencjonalnych procesorów. Charakteryzuje się ona znaczną liczbą elementarnych rozkazów i trybów adresowania przy niewielkiej liczbie rejestrów uniwersalnych. Jest ona bardzo wolna w porównaniu do RISC-ów. Na tej architekturze były oparte pierwsze procesory z rodziny x86. Dziś w tej rodzinie nie spotka się procesora CISC, ale jest ona zastąpiona przez wewnętrzy RISC. Jednak pozostała zgodnie z zasadą ,,kompatybilności w tył'' mała liczba rejestrów, co jest główną bolączką projektantów procesorów x86.
 
-\subparagraph{RISC} (ang. Reduced Instruction Set Computing/Computer) wywodzi się z Berkeley (1985). Koncepcja tego typu architektury jest oparta na ograniczeniu liczby krótkich (maksymalnie dwusłowowych) rozkazów mających niewiele formatów i trybów adresowania. Procesor RISC posiada wiele rejestrów uniwersalnych (nawet powyżej 100). Działanie procesora przyśpieszają dodatkowe ulepszenia, np. przetwarzanie potokowe, czy pamięć podręczna. Instrukcje wykonująproste operacje, dzięki czemu mogą to robić szybko - każda jednostka wykonawcza jest w stanie wykonać dokładnie jednąinstrukcję w jednym cyklu zegara. Lista instrukcji zawiera tylko kilka rozkazów umożliwiających dostęp do pamięci: załadowanie (load), zapis (store) oraz instrukcje semaforowe. Wszystkie pozostałe rozkazy operują wyłącznie na rejestrach - to również upraszcza budowę układu. Instrukcje kodowane są w prosty sposób - każdy rozkaz ma taką samą długość (np. 32 bity).
+\subparagraph{RISC} (ang. Reduced Instruction Set Computing/Computer) wywodzi się z Berkeley (1985). Koncepcja tego typu architektury jest oparta na ograniczeniu liczby krótkich (maksymalnie dwusłowowych) rozkazów mających niewiele formatów i trybów adresowania. Procesor RISC posiada wiele rejestrów uniwersalnych (nawet powyżej 100). Działanie procesora przyśpieszają dodatkowe ulepszenia, np. przetwarzanie potokowe, czy pamięć podręczna. Instrukcje wykonują proste operacje, dzięki czemu mogą to robić szybko - każda jednostka wykonawcza jest w stanie wykonać dokładnie jedną instrukcję w jednym cyklu zegara. Lista instrukcji zawiera tylko kilka rozkazów umożliwiających dostęp do pamięci: załadowanie (load), zapis (store) oraz instrukcje semaforowe. Wszystkie pozostałe rozkazy operują wyłącznie na rejestrach - to również upraszcza budowę układu. Instrukcje kodowane są w prosty sposób - każdy rozkaz ma taką samą długość (np. 32 bity).
 
 \subparagraph{VLIW} (ang. Very Long Instruction Word) – nazwa architektury mikroprocesorów z bardzo długim słowem instrukcji. Obecnie procesory VLIW są oparte na architekturze RISC, zazwyczaj z czterema lub maksymalnie ośmioma jednostkami obliczeniowymi. Po normalnej kompilacji programu, kompilator VLIW porządkuje kod na ścieżki, które wprost nie posiadają jakichkolwiek zależności. Następnie są one dzielone na cztery lub więcej części (jeden dla każdej jednostki obliczeniowej CPU) i pakowane razem w większe instrukcje z dodatkową informacją odnośnie do jednostki, na której ma być wykonywana. Rezultatem tego jest pojedynczy wielki opcode - kod operacji, stąd nazwa ,,Very Long''.
 
@@ -1918,8 +2006,8 @@ Jeśli chodzi o budowę fizyczną, mikroprocesor to nic innego jak krzemowa pły
 
 \paragraph{Magistrale} (ang. Bus) - wewnętrzne szyny łączące.
 \begin{itemize}
-\item \textbf{szyna danych} (ang. data bus) - magistrala komunikacyjna wykorzystywana d przesyłania właściwych danych,
-\item \textbf{szyna adresowa} (ang. address bus) - łączy CPU z pamięcią. Określa pod jaki adres mają zostać wysłane dane szyną danych. Szerokość magistrali (liczba linii) określa maksymalną pojemność pamięci systemu (przestrzeń adresową)
+\item \textbf{szyna danych} (ang. data bus) - magistrala komunikacyjna wykorzystywana do przesyłania właściwych danych,
+\item \textbf{szyna adresowa} (ang. address bus) - łączy CPU z pamięcią. Określa pod jaki adres mają zostać wysłane dane szyną danych. Szerokość magistrali (liczba linii) określa maksymalną pojemność pamięci systemu (przestrzeń adresową),
 \item \textbf{szyna sterująca} (ang. control bus) - zapewnia regulację dostępu do szyny adresowej i szyny danych.
 \end{itemize}
 
@@ -1929,7 +2017,7 @@ Na system mikroprocesorowy składa się mikroprocesor, układy wejścia/wyjścia
 \subsection{Zastosowania}
 \begin{itemize}
 \item elektronika przemysłowa - sterowniki PLC,
-\item elektronika powszechnego użytku - telefony komórkowe, zegarki, komputery
+\item elektronika powszechnego użytku - telefony komórkowe, zegarki, komputery,
 \item telekomunikacja - routery, switche etc.,
 \item technika samochodowa - piloty, sterowniki świateł, lusterek, radia, kontrolery wtrysku,
 \item medycyna - ciśnieniomierze, EKG, USG, termometry, mierniki poziomu cukru we krwi,
@@ -2080,7 +2168,7 @@ System  DNS  jest  rozproszoną  bazą  danych obsługiwaną przez wiele serwer�
 \item współdzielenie zasobów np. plików, drukarek,
 \item komunikacja np. poczta e-mail, telefonia,
 \item sieci przemysłowe,
-\item bezprzewodowe sieci czujników,
+\item bezprzewodowe sieci czujników.
 \end{itemize}
 
 
